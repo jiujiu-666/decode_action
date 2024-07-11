@@ -3,7 +3,7 @@
 #   变量:yuanshen_xcplus 多号： @分割
 #   找https://gw.xiaocantech.com/里任意rpc接口
 #   抓该接口请求头 x-vayne 和 x-teemo 和 x-sivir的值
-#   格式： x-vayne#x-teemo#x-sivir
+#   格式： x-vayne#x-teemo#x-sivir 
 #   --------------------------------一般不动区-------------------------------
 #                     _ooOoo_
 #                    o8888888o
