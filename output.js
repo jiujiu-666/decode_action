@@ -1,7 +1,10 @@
+//Thu Jul 11 2024 15:03:30 GMT+0000 (Coordinated Universal Time)
+//Base:https://github.com/echo094/decode-js
+//Modify:https://github.com/smallfawn/decode_action
 //Thu Jul 11 2024 15:02:15 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-const _0x4c672b = _0x4a9430("中国联通"),
+const _0x4c672b = _0x4a9430("\u4E2D\u56FD\u8054\u901A"),
   _0x2bba68 = require("got"),
   _0x2bbc1d = require("path"),
   {
@@ -66,31 +69,31 @@ const _0x36a6fc = 7,
     card_618: "NZJK618CJHD"
   };
 const _0x166d60 = {
-  name: "星座配对",
+  name: "\u661F\u5EA7\u914D\u5BF9",
   id: 2
 };
 const _0x5a4a00 = {
-  name: "大转盘",
+  name: "\u5927\u8F6C\u76D8",
   id: 3
 };
 const _0x1b5ea0 = {
-  name: "盲盒抽奖",
+  name: "\u76F2\u76D2\u62BD\u5956",
   id: 4
 };
 const _0x4376d8 = [_0x166d60, _0x5a4a00, _0x1b5ea0],
   _0x1c214d = {
-    ZFGJBXXCY1: "空气",
+    ZFGJBXXCY1: "\u7A7A\u6C14",
     GJBNZJK19: "[6]",
     GJBNZJK20: "[1]",
     GJBNZJK21: "[8]",
-    GJBNZJK22: "[狂]",
-    GJBNZJK23: "[欢]"
+    GJBNZJK22: "[\u72C2]",
+    GJBNZJK23: "[\u6B22]"
   };
 const _0x10ec87 = {
-  "抽奖": "01",
-  "首次进入": "02",
-  "卡片合成": "03",
-  "瓜分奖励": "04"
+  "\u62BD\u5956": "01",
+  "\u9996\u6B21\u8FDB\u5165": "02",
+  "\u5361\u7247\u5408\u6210": "03",
+  "\u74DC\u5206\u5956\u52B1": "04"
 };
 function _0x71b805(_0x6a8fe2, _0x1dd78a, _0x1e36ab, _0x3359f8, _0x2c8970, _0x16f3cf) {
   return _0x368aa5[_0x6a8fe2].encrypt(_0x368aa5.enc.Utf8.parse(_0x3359f8), _0x368aa5.enc.Utf8.parse(_0x2c8970), {
@@ -163,7 +166,7 @@ class _0x1e60de {
     var _0x18a4a7 = "",
       _0x732521 = _0x4c672b.userCount.toString().length;
     if (this.index) {
-      _0x18a4a7 += "账号[" + _0x4c672b.padStr(this.index, _0x732521) + "]";
+      _0x18a4a7 += "\u8D26\u53F7[" + _0x4c672b.padStr(this.index, _0x732521) + "]";
     }
     if (this.name) {
       _0x18a4a7 += "[" + this.name + "]";
@@ -224,37 +227,37 @@ class _0x1e60de {
           _0x57cb0a();
         });
         if (_0x143403) {
-          this.log("[" + _0x3f4231 + "]请求超时(" + _0x58a24f / 1000 + "秒)，重试第" + _0x1a7b45 + "次");
+          this.log("[" + _0x3f4231 + "]\u8BF7\u6C42\u8D85\u65F6(" + _0x58a24f / 1000 + "\u79D2)\uFF0C\u91CD\u8BD5\u7B2C" + _0x1a7b45 + "\u6B21");
         } else {
           if (_0x668150.includes(_0x823091)) {
-            this.log("[" + _0x3f4231 + "]请求错误[" + _0x823091 + "][" + _0x173cf5 + "]");
+            this.log("[" + _0x3f4231 + "]\u8BF7\u6C42\u9519\u8BEF[" + _0x823091 + "][" + _0x173cf5 + "]");
             if (_0x179710?.["message"]) {
               console.log(_0x179710.message);
             }
             break;
           } else {
             if (_0x23df85.includes(_0x173cf5)) {
-              this.log("[" + _0x3f4231 + "]请求错误[" + _0x823091 + "][" + _0x173cf5 + "]，重试第" + _0x1a7b45 + "次");
+              this.log("[" + _0x3f4231 + "]\u8BF7\u6C42\u9519\u8BEF[" + _0x823091 + "][" + _0x173cf5 + "]\uFF0C\u91CD\u8BD5\u7B2C" + _0x1a7b45 + "\u6B21");
             } else {
               if (_0x290a0a.includes(_0x823091)) {
-                this.log("[" + _0x3f4231 + "]请求错误[" + _0x823091 + "][" + _0x173cf5 + "]，重试第" + _0x1a7b45 + "次");
+                this.log("[" + _0x3f4231 + "]\u8BF7\u6C42\u9519\u8BEF[" + _0x823091 + "][" + _0x173cf5 + "]\uFF0C\u91CD\u8BD5\u7B2C" + _0x1a7b45 + "\u6B21");
               } else {
                 let _0x26ca58 = _0x4a443f?.["statusCode"] || "",
                   _0xeb6c6a = _0x26ca58 / 100 | 0;
                 if (_0x26ca58) {
-                  _0xeb6c6a > 3 && !_0x5e1d36.includes(_0x26ca58) && (_0x26ca58 ? this.log("请求[" + _0x3f4231 + "]返回[" + _0x26ca58 + "]") : this.log("请求[" + _0x3f4231 + "]错误[" + _0x823091 + "][" + _0x173cf5 + "]"));
+                  _0xeb6c6a > 3 && !_0x5e1d36.includes(_0x26ca58) && (_0x26ca58 ? this.log("\u8BF7\u6C42[" + _0x3f4231 + "]\u8FD4\u56DE[" + _0x26ca58 + "]") : this.log("\u8BF7\u6C42[" + _0x3f4231 + "]\u9519\u8BEF[" + _0x823091 + "][" + _0x173cf5 + "]"));
                   if (_0xeb6c6a <= 4) {
                     break;
                   }
                 } else {
-                  this.log("请求[" + _0x3f4231 + "]错误[" + _0x823091 + "][" + _0x173cf5 + "]");
+                  this.log("\u8BF7\u6C42[" + _0x3f4231 + "]\u9519\u8BEF[" + _0x823091 + "][" + _0x173cf5 + "]");
                 }
               }
             }
           }
         }
       } catch (_0x3004fb) {
-        _0x3004fb.name == "TimeoutError" ? this.log("[" + _0x3f4231 + "]请求超时，重试第" + _0x1a7b45 + "次") : this.log("[" + _0x3f4231 + "]请求错误(" + _0x3004fb.message + ")，重试第" + _0x1a7b45 + "次");
+        _0x3004fb.name == "TimeoutError" ? this.log("[" + _0x3f4231 + "]\u8BF7\u6C42\u8D85\u65F6\uFF0C\u91CD\u8BD5\u7B2C" + _0x1a7b45 + "\u6B21") : this.log("[" + _0x3f4231 + "]\u8BF7\u6C42\u9519\u8BEF(" + _0x3004fb.message + ")\uFF0C\u91CD\u8BD5\u7B2C" + _0x1a7b45 + "\u6B21");
       }
     }
     if (_0x4a443f == null) {
@@ -419,10 +422,10 @@ class _0x333e45 extends _0x24046c {
         this.name = _0x1b682a?.["desmobile"];
         this.ecs_token = _0x1b682a?.["ecs_token"];
         this.city = _0x1b682a?.["list"];
-        this.log("登录成功");
+        this.log("\u767B\u5F55\u6210\u529F");
       } else {
         this.valid = false;
-        this.log("登录失败[" + _0x5655f9 + "]");
+        this.log("\u767B\u5F55\u5931\u8D25[" + _0x5655f9 + "]");
       }
     } catch (_0x158d45) {
       console.log(_0x158d45);
@@ -455,7 +458,7 @@ class _0x333e45 extends _0x24046c {
         let _0x4d5939 = new URL(_0x1ad54b.location),
           _0x5c9903 = _0x4d5939.searchParams.get("type") || "02",
           _0x10c474 = _0x4d5939.searchParams.get("ticket");
-        !_0x10c474 && this.log("获取ticket失败");
+        !_0x10c474 && this.log("\u83B7\u53D6ticket\u5931\u8D25");
         const _0x3aab7e = {
           loc: _0x1ad54b.location,
           ticket: _0x10c474,
@@ -463,7 +466,7 @@ class _0x333e45 extends _0x24046c {
         };
         _0x6e6d39 = _0x3aab7e;
       } else {
-        this.log("获取ticket失败[" + _0x3bb878 + "]");
+        this.log("\u83B7\u53D6ticket\u5931\u8D25[" + _0x3bb878 + "]");
       }
     } catch (_0x2f04bf) {
       console.log(_0x2f04bf);
@@ -506,7 +509,7 @@ class _0x333e45 extends _0x24046c {
       if (_0x16eb3b == "0000") {
         let _0x16c184 = parseInt(_0x264d2c?.["data"]?.["allRemainTimes"] || 0),
           _0x20fa50 = Math.min(_0x4cffb4, _0x16c184);
-        this.log("28日五折日可以抽奖" + _0x16c184 + "次, 去抽" + _0x20fa50 + "次");
+        this.log("28\u65E5\u4E94\u6298\u65E5\u53EF\u4EE5\u62BD\u5956" + _0x16c184 + "\u6B21, \u53BB\u62BD" + _0x20fa50 + "\u6B21");
         let _0x3cbcdc = false;
         while (_0x20fa50-- > 0) {
           if (_0x3cbcdc) {
@@ -517,7 +520,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0x10a2a1 = _0x264d2c?.["message"] || _0x264d2c?.["msg"] || "";
-        this.log("28日五折日查询抽奖次数失败[" + _0x16eb3b + "]: " + _0x10a2a1);
+        this.log("28\u65E5\u4E94\u6298\u65E5\u67E5\u8BE2\u62BD\u5956\u6B21\u6570\u5931\u8D25[" + _0x16eb3b + "]: " + _0x10a2a1);
       }
     } catch (_0x30dd28) {
       console.log(_0x30dd28);
@@ -542,11 +545,11 @@ class _0x333e45 extends _0x24046c {
           await this.draw_28_winningRecord(_0x49d94d.data.uuid);
         } else {
           let _0x385a86 = _0x49d94d?.["data"]?.["message"] || _0x49d94d?.["data"]?.["msg"] || "";
-          this.log("28日五折日抽奖失败[" + _0x2f5c79 + "]: " + _0x385a86);
+          this.log("28\u65E5\u4E94\u6298\u65E5\u62BD\u5956\u5931\u8D25[" + _0x2f5c79 + "]: " + _0x385a86);
         }
       } else {
         let _0x10529b = _0x49d94d?.["message"] || _0x49d94d?.["msg"] || "";
-        this.log("28日五折日抽奖失败[" + _0x201a54 + "]: " + _0x10529b);
+        this.log("28\u65E5\u4E94\u6298\u65E5\u62BD\u5956\u5931\u8D25[" + _0x201a54 + "]: " + _0x10529b);
       }
     } catch (_0x184f71) {
       console.log(_0x184f71);
@@ -574,14 +577,14 @@ class _0x333e45 extends _0x24046c {
           const _0x38cfce = {
             notify: true
           };
-          this.log("28日五折日抽奖: " + _0x555923?.["data"]?.["prizeName"]?.["replace"](/\t/g, ""), _0x38cfce);
+          this.log("28\u65E5\u4E94\u6298\u65E5\u62BD\u5956: " + _0x555923?.["data"]?.["prizeName"]?.["replace"](/\t/g, ""), _0x38cfce);
         } else {
           let _0x1218f5 = _0x555923?.["data"]?.["message"] || _0x555923?.["data"]?.["msg"] || "";
-          this.log("查询28日五折日抽奖结果失败[" + _0x1d3b22 + "]: " + _0x1218f5);
+          this.log("\u67E5\u8BE228\u65E5\u4E94\u6298\u65E5\u62BD\u5956\u7ED3\u679C\u5931\u8D25[" + _0x1d3b22 + "]: " + _0x1218f5);
         }
       } else {
         let _0x408868 = _0x555923?.["message"] || _0x555923?.["msg"] || "";
-        this.log("查询28日五折日抽奖结果失败[" + _0x4f5744 + "]: " + _0x408868);
+        this.log("\u67E5\u8BE228\u65E5\u4E94\u6298\u65E5\u62BD\u5956\u7ED3\u679C\u5931\u8D25[" + _0x4f5744 + "]: " + _0x408868);
       }
     } catch (_0xfa9340) {
       console.log(_0xfa9340);
@@ -622,7 +625,7 @@ class _0x333e45 extends _0x24046c {
         await this.ttlxj_authCheck();
       } else {
         let _0x29da44 = _0x1ef66b?.["message"] || _0x1ef66b?.["msg"] || "";
-        this.log("天天领现金获取SESSION失败[" + _0x58c1b9 + "]: " + _0x29da44);
+        this.log("\u5929\u5929\u9886\u73B0\u91D1\u83B7\u53D6SESSION\u5931\u8D25[" + _0x58c1b9 + "]: " + _0x29da44);
       }
     } catch (_0x588690) {
       console.log(_0x588690);
@@ -663,7 +666,7 @@ class _0x333e45 extends _0x24046c {
           await this.ttlxj_login(_0x3c284b);
         } else {
           let _0x118393 = _0x3b9b60?.["msgInside"] || _0x3b9b60?.["msg"] || "";
-          this.log("天天领现金获取tokenId失败[" + _0x225a71 + "]: " + _0x118393);
+          this.log("\u5929\u5929\u9886\u73B0\u91D1\u83B7\u53D6tokenId\u5931\u8D25[" + _0x225a71 + "]: " + _0x118393);
         }
       }
     } catch (_0x241235) {
@@ -685,9 +688,9 @@ class _0x333e45 extends _0x24046c {
       if (_0x3fd535?.["location"]) {
         let _0x48f551 = new URL(_0x3fd535.location);
         this.rptId = _0x48f551.searchParams.get("rptid");
-        this.rptId ? await this.ttlxj_authCheck() : this.log("天天领现金获取rptid失败");
+        this.rptId ? await this.ttlxj_authCheck() : this.log("\u5929\u5929\u9886\u73B0\u91D1\u83B7\u53D6rptid\u5931\u8D25");
       } else {
-        this.log("天天领现金获取rptid失败[" + _0x11cbd3 + "]");
+        this.log("\u5929\u5929\u9886\u73B0\u91D1\u83B7\u53D6rptid\u5931\u8D25[" + _0x11cbd3 + "]");
       }
     } catch (_0x5dbd52) {
       console.log(_0x5dbd52);
@@ -715,14 +718,14 @@ class _0x333e45 extends _0x24046c {
         const _0x21c565 = {
           notify: true
         };
-        this.log("天天领现金今天" + (_0x2e460c ? "未" : "已") + "打卡", _0x21c565);
+        this.log("\u5929\u5929\u9886\u73B0\u91D1\u4ECA\u5929" + (_0x2e460c ? "\u672A" : "\u5DF2") + "\u6253\u5361", _0x21c565);
         if (_0x2e460c) {
           let _0x8aadbb = new Date().getDay();
           _0x8aadbb % 7 == 0 ? await this.ttlxj_unifyDrawNew("C") : await this.ttlxj_unifyDrawNew("B");
         }
       } else {
         let _0x164c15 = _0x45a3ac?.["msg"] || "";
-        this.log("天天领现金查询失败[" + _0x5c07d0 + "]: " + _0x164c15);
+        this.log("\u5929\u5929\u9886\u73B0\u91D1\u67E5\u8BE2\u5931\u8D25[" + _0x5c07d0 + "]: " + _0x164c15);
       }
     } catch (_0xe34553) {
       console.log(_0xe34553);
@@ -754,10 +757,10 @@ class _0x333e45 extends _0x24046c {
         const _0x59731c = {
           notify: true
         };
-        this.log("天天领现金打卡:" + _0x46ba0e, _0x59731c);
+        this.log("\u5929\u5929\u9886\u73B0\u91D1\u6253\u5361:" + _0x46ba0e, _0x59731c);
       } else {
         let _0x366f6b = _0x5dd24a?.["data"]?.["returnMsg"] || _0x5dd24a?.["msg"] || "";
-        this.log("天天领现金打卡失败[" + (_0x5dd24a?.["data"]?.["returnCode"] || _0x5783a6) + "]: " + _0x366f6b);
+        this.log("\u5929\u5929\u9886\u73B0\u91D1\u6253\u5361\u5931\u8D25[" + (_0x5dd24a?.["data"]?.["returnCode"] || _0x5783a6) + "]: " + _0x366f6b);
       }
     } catch (_0x28cf1a) {
       console.log(_0x28cf1a);
@@ -805,7 +808,7 @@ class _0x333e45 extends _0x24046c {
         const _0x3dffbb = {
           notify: true
         };
-        this.log("可用立减金: " + (_0x11a97b / 100).toFixed(2) + "元", _0x3dffbb);
+        this.log("\u53EF\u7528\u7ACB\u51CF\u91D1: " + (_0x11a97b / 100).toFixed(2) + "\u5143", _0x3dffbb);
         let _0x3a9ca0 = [],
           _0x4a77d6 = Date.now();
         for (let _0x22c5c5 of _0x351127?.["data"]?.["prizeList"]?.["filter"](_0xac5521 => _0xac5521.status == "A")) {
@@ -834,20 +837,20 @@ class _0x333e45 extends _0x24046c {
           const _0x5d32b7 = {
             notify: true
           };
-          this.log(_0x36a6fc + "天内过期立减金: " + _0x296b80.toFixed(2) + "元", _0x5d32b7);
+          this.log(_0x36a6fc + "\u5929\u5185\u8FC7\u671F\u7ACB\u51CF\u91D1: " + _0x296b80.toFixed(2) + "\u5143", _0x5d32b7);
           const _0x2dff48 = {
             notify: true
           };
-          this.log("最早过期立减金: " + _0xb33342.amount + "元 -- " + _0xb33342.date + "过期", _0x2dff48);
+          this.log("\u6700\u65E9\u8FC7\u671F\u7ACB\u51CF\u91D1: " + _0xb33342.amount + "\u5143 -- " + _0xb33342.date + "\u8FC7\u671F", _0x2dff48);
         } else {
           const _0x437216 = {
             notify: true
           };
-          this.log(_0x36a6fc + "天内没有过期的立减金", _0x437216);
+          this.log(_0x36a6fc + "\u5929\u5185\u6CA1\u6709\u8FC7\u671F\u7684\u7ACB\u51CF\u91D1", _0x437216);
         }
       } else {
         let _0x1a23ec = _0x351127?.["data"]?.["returnMsg"] || _0x351127?.["msg"] || "";
-        this.log("天天领现金打卡失败[" + (_0x351127?.["data"]?.["returnCode"] || _0x22c4f9) + "]: " + _0x1a23ec);
+        this.log("\u5929\u5929\u9886\u73B0\u91D1\u6253\u5361\u5931\u8D25[" + (_0x351127?.["data"]?.["returnCode"] || _0x22c4f9) + "]: " + _0x1a23ec);
       }
     } catch (_0x2d80a8) {
       console.log(_0x2d80a8);
@@ -887,7 +890,7 @@ class _0x333e45 extends _0x24046c {
           await this.epay_28_login(_0x5892fa);
         } else {
           let _0x1fb8e2 = _0x1d449e?.["msgInside"] || _0x1d449e?.["msg"] || "";
-          this.log("联通支付日获取tokenId失败[" + _0x4e8f00 + "]: " + _0x1fb8e2);
+          this.log("\u8054\u901A\u652F\u4ED8\u65E5\u83B7\u53D6tokenId\u5931\u8D25[" + _0x4e8f00 + "]: " + _0x1fb8e2);
         }
       }
     } catch (_0x268652) {
@@ -910,9 +913,9 @@ class _0x333e45 extends _0x24046c {
       if (_0x10b4ba?.["location"]) {
         let _0xbf5a4c = new URL(_0x10b4ba.location);
         this.rptId = _0xbf5a4c.searchParams.get("rptid");
-        this.rptId ? await this.epay_28_authCheck() : this.log("联通支付日获取rptid失败");
+        this.rptId ? await this.epay_28_authCheck() : this.log("\u8054\u901A\u652F\u4ED8\u65E5\u83B7\u53D6rptid\u5931\u8D25");
       } else {
-        this.log("联通支付日获取rptid失败[" + _0x1c60e3 + "]");
+        this.log("\u8054\u901A\u652F\u4ED8\u65E5\u83B7\u53D6rptid\u5931\u8D25[" + _0x1c60e3 + "]");
       }
     } catch (_0x24e61c) {
       console.log(_0x24e61c);
@@ -948,7 +951,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0x253476 = _0x316895?.["message"] || _0x316895?.["msg"] || "";
-        this.log("联通支付日进入主页失败[" + _0x2a5e2b + "]: " + _0x253476);
+        this.log("\u8054\u901A\u652F\u4ED8\u65E5\u8FDB\u5165\u4E3B\u9875\u5931\u8D25[" + _0x2a5e2b + "]: " + _0x253476);
       }
     } catch (_0x4d57b5) {
       console.log(_0x4d57b5);
@@ -976,10 +979,10 @@ class _0x333e45 extends _0x24046c {
         _0x4b44ce = _0x4c672b.get(_0x3851a6, "code", -1);
       if (_0x4b44ce == "0000") {
         let _0xcad9a9 = _0x4c672b.time("dd");
-        _0x3851a6?.["data"]?.[_0xcad9a9] == "1" ? this.log("联通支付日今日(" + _0xcad9a9 + "号)已打卡") : await this.epay_28_unifyDrawNew(_0x5c5db5, _0x392918);
+        _0x3851a6?.["data"]?.[_0xcad9a9] == "1" ? this.log("\u8054\u901A\u652F\u4ED8\u65E5\u4ECA\u65E5(" + _0xcad9a9 + "\u53F7)\u5DF2\u6253\u5361") : await this.epay_28_unifyDrawNew(_0x5c5db5, _0x392918);
       } else {
         let _0x42d4bb = _0x3851a6?.["message"] || _0x3851a6?.["msg"] || "";
-        this.log("联通支付日查询打卡失败[" + _0x4b44ce + "]: " + _0x42d4bb);
+        this.log("\u8054\u901A\u652F\u4ED8\u65E5\u67E5\u8BE2\u6253\u5361\u5931\u8D25[" + _0x4b44ce + "]: " + _0x42d4bb);
       }
     } catch (_0x56f54c) {
       console.log(_0x56f54c);
@@ -1011,10 +1014,10 @@ class _0x333e45 extends _0x24046c {
         const _0x5e238f = {
           notify: true
         };
-        this.log("联通支付日打卡:" + _0xc69fe5, _0x5e238f);
+        this.log("\u8054\u901A\u652F\u4ED8\u65E5\u6253\u5361:" + _0xc69fe5, _0x5e238f);
       } else {
         let _0x5dd5bd = _0x39b4c5?.["data"]?.["returnMsg"] || _0x39b4c5?.["msg"] || "";
-        this.log("联通支付日打卡失败[" + (_0x39b4c5?.["data"]?.["returnCode"] || _0x372dd5) + "]: " + _0x5dd5bd);
+        this.log("\u8054\u901A\u652F\u4ED8\u65E5\u6253\u5361\u5931\u8D25[" + (_0x39b4c5?.["data"]?.["returnCode"] || _0x372dd5) + "]: " + _0x5dd5bd);
       }
     } catch (_0xe6df9) {
       console.log(_0xe6df9);
@@ -1046,10 +1049,10 @@ class _0x333e45 extends _0x24046c {
         const _0x3b6f17 = {
           notify: true
         };
-        this.log("联通支付日抽奖: " + (_0x34ea6b?.["data"]?.["prizeName"] || ""), _0x3b6f17);
+        this.log("\u8054\u901A\u652F\u4ED8\u65E5\u62BD\u5956: " + (_0x34ea6b?.["data"]?.["prizeName"] || ""), _0x3b6f17);
       } else {
         let _0x22895a = _0x34ea6b?.["data"]?.["returnMsg"] || _0x34ea6b?.["msg"] || "";
-        this.log("联通支付日抽奖失败[" + (_0x34ea6b?.["data"]?.["returnCode"] || _0x384c09) + "]: " + _0x22895a);
+        this.log("\u8054\u901A\u652F\u4ED8\u65E5\u62BD\u5956\u5931\u8D25[" + (_0x34ea6b?.["data"]?.["returnCode"] || _0x384c09) + "]: " + _0x22895a);
       }
     } catch (_0x4e021a) {
       console.log(_0x4e021a);
@@ -1093,14 +1096,14 @@ class _0x333e45 extends _0x24046c {
         } = _0x5916d9?.["data"];
         if (_0xb9f5d3) {
           let _0x4254ed = Math.min(_0x52ff20, _0x2c03ad);
-          this.log("联通支付日可以开宝箱" + _0x2c03ad + "次, 去抽" + _0x4254ed + "次");
+          this.log("\u8054\u901A\u652F\u4ED8\u65E5\u53EF\u4EE5\u5F00\u5B9D\u7BB1" + _0x2c03ad + "\u6B21, \u53BB\u62BD" + _0x4254ed + "\u6B21");
           while (_0x4254ed-- > 0) {
             await this.appMonth_28_lottery();
           }
         }
       } else {
         let _0x5ac723 = _0x5916d9?.["msg"] || "";
-        this.log("联通支付日查询开宝箱次数失败[" + _0x54ad44 + "]: " + _0x5ac723);
+        this.log("\u8054\u901A\u652F\u4ED8\u65E5\u67E5\u8BE2\u5F00\u5B9D\u7BB1\u6B21\u6570\u5931\u8D25[" + _0x54ad44 + "]: " + _0x5ac723);
       }
     } catch (_0x38708c) {
       console.log(_0x38708c);
@@ -1122,10 +1125,10 @@ class _0x333e45 extends _0x24046c {
           code: _0x4506d5,
           uuid: _0x217783
         } = _0x360c8d?.["data"];
-        _0x217783 ? await this.appMonth_28_winningRecord(_0x217783) : this.log("联通支付日开宝箱失败[" + _0x4506d5 + "]");
+        _0x217783 ? await this.appMonth_28_winningRecord(_0x217783) : this.log("\u8054\u901A\u652F\u4ED8\u65E5\u5F00\u5B9D\u7BB1\u5931\u8D25[" + _0x4506d5 + "]");
       } else {
         let _0x1c765a = _0x360c8d?.["msg"] || "";
-        this.log("联通支付日开宝箱失败[" + _0x1faa78 + "]: " + _0x1c765a);
+        this.log("\u8054\u901A\u652F\u4ED8\u65E5\u5F00\u5B9D\u7BB1\u5931\u8D25[" + _0x1faa78 + "]: " + _0x1c765a);
       }
     } catch (_0x1e578f) {
       console.log(_0x1e578f);
@@ -1155,14 +1158,14 @@ class _0x333e45 extends _0x24046c {
           const _0x194d8b = {
             notify: true
           };
-          this.log("联通支付日开宝箱: " + _0x428599, _0x194d8b);
+          this.log("\u8054\u901A\u652F\u4ED8\u65E5\u5F00\u5B9D\u7BB1: " + _0x428599, _0x194d8b);
         } else {
           let _0x4a0327 = _0x3de180?.["data"]?.["message"] || "";
-          this.log("联通支付日开宝箱[" + _0x20040f + "]: " + _0x4a0327);
+          this.log("\u8054\u901A\u652F\u4ED8\u65E5\u5F00\u5B9D\u7BB1[" + _0x20040f + "]: " + _0x4a0327);
         }
       } else {
         let _0x507948 = _0x3de180?.["msg"] || "";
-        this.log("联通支付日查询中奖奖品错误[" + _0x51662d + "]: " + _0x507948);
+        this.log("\u8054\u901A\u652F\u4ED8\u65E5\u67E5\u8BE2\u4E2D\u5956\u5956\u54C1\u9519\u8BEF[" + _0x51662d + "]: " + _0x507948);
       }
     } catch (_0x12630e) {
       console.log(_0x12630e);
@@ -1188,11 +1191,11 @@ class _0x333e45 extends _0x24046c {
         const _0x4e43ef = {
           notify: true
         };
-        this.log("签到区今天" + (_0x2ddb99 == "1" ? "未" : "已") + "签到", _0x4e43ef);
+        this.log("\u7B7E\u5230\u533A\u4ECA\u5929" + (_0x2ddb99 == "1" ? "\u672A" : "\u5DF2") + "\u7B7E\u5230", _0x4e43ef);
         _0x2ddb99 == "1" && (await _0x4c672b.wait(1000), await this.sign_daySign());
       } else {
         let _0x2d9f11 = _0x375bbc?.["msg"] || "";
-        this.log("签到区查询签到状态失败[" + _0x390277 + "]: " + _0x2d9f11);
+        this.log("\u7B7E\u5230\u533A\u67E5\u8BE2\u7B7E\u5230\u72B6\u6001\u5931\u8D25[" + _0x390277 + "]: " + _0x2d9f11);
       }
     } catch (_0x1e4db0) {
       console.log(_0x1e4db0);
@@ -1222,10 +1225,10 @@ class _0x333e45 extends _0x24046c {
         const _0x49da7c = {
           notify: true
         };
-        this.log("签到区签到成功: [" + _0x3544fb + "]" + _0x5016bf, _0x49da7c);
+        this.log("\u7B7E\u5230\u533A\u7B7E\u5230\u6210\u529F: [" + _0x3544fb + "]" + _0x5016bf, _0x49da7c);
       } else {
         let _0x33d8bc = _0x45b961?.["msg"] || "";
-        this.log("签到区签到失败[" + _0x3dd664 + "]: " + _0x33d8bc);
+        this.log("\u7B7E\u5230\u533A\u7B7E\u5230\u5931\u8D25[" + _0x3dd664 + "]: " + _0x33d8bc);
       }
     } catch (_0x31a630) {
       console.log(_0x31a630);
@@ -1249,7 +1252,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0xac9a0b = _0xff3076?.["msg"] || "";
-        this.log("签到区查询气泡任务失败[" + _0x1e9efb + "]: " + _0xac9a0b);
+        this.log("\u7B7E\u5230\u533A\u67E5\u8BE2\u6C14\u6CE1\u4EFB\u52A1\u5931\u8D25[" + _0x1e9efb + "]: " + _0xac9a0b);
       }
     } catch (_0x24c5dc) {
       console.log(_0x24c5dc);
@@ -1275,10 +1278,10 @@ class _0x333e45 extends _0x24046c {
         } = await this.request(_0x31aade),
         _0x1d5e4d = _0x4c672b.get(_0x329766, "status", -1);
       if (_0x1d5e4d == "0000") {
-        this.log("完成任务[" + _0x4cf867.actName + "]获得: " + _0x329766?.["data"]?.["prizeCount"] + _0x329766?.["data"]?.["prizeName"]);
+        this.log("\u5B8C\u6210\u4EFB\u52A1[" + _0x4cf867.actName + "]\u83B7\u5F97: " + _0x329766?.["data"]?.["prizeCount"] + _0x329766?.["data"]?.["prizeName"]);
       } else {
         let _0x5cf326 = _0x329766?.["msg"] || "";
-        this.log("完成任务[" + _0x4cf867.actName + "]失败[" + _0x1d5e4d + "]: " + _0x5cf326);
+        this.log("\u5B8C\u6210\u4EFB\u52A1[" + _0x4cf867.actName + "]\u5931\u8D25[" + _0x1d5e4d + "]: " + _0x5cf326);
       }
     } catch (_0x4ad671) {
       console.log(_0x4ad671);
@@ -1320,10 +1323,10 @@ class _0x333e45 extends _0x24046c {
         const _0x563fcb = {
           notify: true
         };
-        this.log("联通畅游币: " + this.point, _0x563fcb);
+        this.log("\u8054\u901A\u7545\u6E38\u5E01: " + this.point, _0x563fcb);
       } else {
         let _0x1d6aa5 = _0x206034?.["msg"] || "";
-        this.log("联通畅游登录失败[" + _0xe387fd + "]: " + _0x1d6aa5);
+        this.log("\u8054\u901A\u7545\u6E38\u767B\u5F55\u5931\u8D25[" + _0xe387fd + "]: " + _0x1d6aa5);
       }
     } catch (_0x22daa6) {
       console.log(_0x22daa6);
@@ -1344,7 +1347,7 @@ class _0x333e45 extends _0x24046c {
         this.point = _0x25b820?.["data"]?.["userIntegral"];
       } else {
         let _0x31251d = _0x25b820?.["msg"] || "";
-        this.log("联通畅游查询积分失败[" + _0x4c45ab + "]: " + _0x31251d);
+        this.log("\u8054\u901A\u7545\u6E38\u67E5\u8BE2\u79EF\u5206\u5931\u8D25[" + _0x4c45ab + "]: " + _0x31251d);
       }
     } catch (_0x3a8d0c) {
       console.log(_0x3a8d0c);
@@ -1366,14 +1369,14 @@ class _0x333e45 extends _0x24046c {
           if (_0x48dbac.now == 0) {
             continue;
           }
-          this.log("联通畅游今天" + (_0x48dbac.signStatus == 2 ? "未" : "已") + "签到");
+          this.log("\u8054\u901A\u7545\u6E38\u4ECA\u5929" + (_0x48dbac.signStatus == 2 ? "\u672A" : "\u5DF2") + "\u7B7E\u5230");
           if (_0x48dbac.signStatus == 2) {
             await this.game_signIn();
           }
         }
       } else {
         let _0x4c5073 = _0x3d9d1c?.["msg"] || "";
-        this.log("联通畅游查询签到失败[" + _0x56bc7f + "]: " + _0x4c5073);
+        this.log("\u8054\u901A\u7545\u6E38\u67E5\u8BE2\u7B7E\u5230\u5931\u8D25[" + _0x56bc7f + "]: " + _0x4c5073);
       }
     } catch (_0x8f9b0b) {
       console.log(_0x8f9b0b);
@@ -1391,10 +1394,10 @@ class _0x333e45 extends _0x24046c {
         } = await this.request(_0x3d53ee),
         _0x478093 = _0x4c672b.get(_0x1f4677, "code", -1);
       if (_0x478093 == 200) {
-        this.log("联通畅游签到成功");
+        this.log("\u8054\u901A\u7545\u6E38\u7B7E\u5230\u6210\u529F");
       } else {
         let _0x2b40f2 = _0x1f4677?.["msg"] || "";
-        this.log("联通畅游签到失败[" + _0x478093 + "]: " + _0x2b40f2);
+        this.log("\u8054\u901A\u7545\u6E38\u7B7E\u5230\u5931\u8D25[" + _0x478093 + "]: " + _0x2b40f2);
       }
     } catch (_0xfac145) {
       console.log(_0xfac145);
@@ -1417,10 +1420,10 @@ class _0x333e45 extends _0x24046c {
         } = await this.request(_0x54913c),
         _0x29af87 = _0x4c672b.get(_0x31be4b, "code", -1);
       if (_0x29af87 == 200) {
-        this.log("联通畅游滑块验证成功");
+        this.log("\u8054\u901A\u7545\u6E38\u6ED1\u5757\u9A8C\u8BC1\u6210\u529F");
       } else {
         let _0x661bc2 = _0x31be4b?.["msg"] || "";
-        this.log("联通畅游滑块验证失败[" + _0x29af87 + "]: " + _0x661bc2);
+        this.log("\u8054\u901A\u7545\u6E38\u6ED1\u5757\u9A8C\u8BC1\u5931\u8D25[" + _0x29af87 + "]: " + _0x661bc2);
       }
     } catch (_0x441ee4) {
       console.log(_0x441ee4);
@@ -1446,10 +1449,10 @@ class _0x333e45 extends _0x24046c {
         const _0x46c4cd = {
           notify: true
         };
-        this.log("联通畅游抽奖: " + _0x375b1d?.["data"]?.["productName"], _0x46c4cd);
+        this.log("\u8054\u901A\u7545\u6E38\u62BD\u5956: " + _0x375b1d?.["data"]?.["productName"], _0x46c4cd);
       } else {
         let _0x172e69 = _0x375b1d?.["msg"] || "";
-        this.log("联通畅游抽奖失败[" + _0x44ca98 + "]: " + _0x172e69);
+        this.log("\u8054\u901A\u7545\u6E38\u62BD\u5956\u5931\u8D25[" + _0x44ca98 + "]: " + _0x172e69);
       }
     } catch (_0x5cc5c9) {
       console.log(_0x5cc5c9);
@@ -1477,13 +1480,13 @@ class _0x333e45 extends _0x24046c {
             case 2:
               break;
             default:
-              _0x4c672b.log("任务[" + _0x2b6e2e.taskName + "]未知状态[" + _0x2b6e2e.receiveStatus + "]");
+              _0x4c672b.log("\u4EFB\u52A1[" + _0x2b6e2e.taskName + "]\u672A\u77E5\u72B6\u6001[" + _0x2b6e2e.receiveStatus + "]");
               break;
           }
         }
       } else {
         let _0x3e9a0f = _0x24a55d?.["msg"] || "";
-        this.log("联通畅游查询任务失败[" + _0x641976 + "]: " + _0x3e9a0f);
+        this.log("\u8054\u901A\u7545\u6E38\u67E5\u8BE2\u4EFB\u52A1\u5931\u8D25[" + _0x641976 + "]: " + _0x3e9a0f);
       }
     } catch (_0x169b29) {
       console.log(_0x169b29);
@@ -1506,10 +1509,10 @@ class _0x333e45 extends _0x24046c {
         } = await this.request(_0x1eca66),
         _0x288264 = _0x4c672b.get(_0x2f8fb3, "code", -1);
       if (_0x288264 == 200) {
-        this.log("领取任务[" + _0xe2b155.taskName + "]奖励成功");
+        this.log("\u9886\u53D6\u4EFB\u52A1[" + _0xe2b155.taskName + "]\u5956\u52B1\u6210\u529F");
       } else {
         let _0x261128 = _0x2f8fb3?.["msg"] || "";
-        this.log("领取任务[" + _0xe2b155.taskName + "]奖励失败[" + _0x288264 + "]: " + _0x261128);
+        this.log("\u9886\u53D6\u4EFB\u52A1[" + _0xe2b155.taskName + "]\u5956\u52B1\u5931\u8D25[" + _0x288264 + "]: " + _0x261128);
       }
     } catch (_0x33f03b) {
       console.log(_0x33f03b);
@@ -1531,7 +1534,7 @@ class _0x333e45 extends _0x24046c {
         _0x405dad = _0x4c672b.get(_0x435b34, "code", -1);
       if (!(_0x405dad == 200)) {
         let _0x407e03 = _0x435b34?.["msg"] || "";
-        this.log("联通畅游玩游戏失败[" + _0x405dad + "]: " + _0x407e03);
+        this.log("\u8054\u901A\u7545\u6E38\u73A9\u6E38\u620F\u5931\u8D25[" + _0x405dad + "]: " + _0x407e03);
       }
     } catch (_0x10eb8a) {
       console.log(_0x10eb8a);
@@ -1551,9 +1554,9 @@ class _0x333e45 extends _0x24046c {
       if (_0x44fb4d?.["location"]) {
         let _0x366f8a = new URL(_0x44fb4d.location);
         this.flmf_sid = _0x366f8a.searchParams.get("sid");
-        this.flmf_sid ? (await this.flmf_signInInit(), await this.flmf_taskList(), await this.flmf_scanTask()) : this.log("福利魔方获取sid失败");
+        this.flmf_sid ? (await this.flmf_signInInit(), await this.flmf_taskList(), await this.flmf_scanTask()) : this.log("\u798F\u5229\u9B54\u65B9\u83B7\u53D6sid\u5931\u8D25");
       } else {
-        this.log("福利魔方获取sid失败[" + _0x2923d9 + "]");
+        this.log("\u798F\u5229\u9B54\u65B9\u83B7\u53D6sid\u5931\u8D25[" + _0x2923d9 + "]");
       }
     } catch (_0x27766a) {
       console.log(_0x27766a);
@@ -1572,13 +1575,13 @@ class _0x333e45 extends _0x24046c {
         } = await this.request(_0x2014b6),
         _0x2732b9 = _0x4c672b.get(_0x41327b, "resultCode", -1);
       if (_0x2732b9 == "0000") {
-        this.log("福利魔方今天" + (_0x41327b?.["data"]?.["isSigned"] ? "已" : "未") + "签到, 已连续签到" + _0x41327b?.["data"]?.["consecutiveDays"] + "天");
+        this.log("\u798F\u5229\u9B54\u65B9\u4ECA\u5929" + (_0x41327b?.["data"]?.["isSigned"] ? "\u5DF2" : "\u672A") + "\u7B7E\u5230, \u5DF2\u8FDE\u7EED\u7B7E\u5230" + _0x41327b?.["data"]?.["consecutiveDays"] + "\u5929");
         if (!_0x41327b?.["data"]?.["isSigned"]) {
           await this.flmf_signIn();
         }
       } else {
         let _0x1a8187 = _0x41327b?.["resultMsg"] || "";
-        this.log("福利魔方查询签到失败[" + _0x2732b9 + "]: " + _0x1a8187);
+        this.log("\u798F\u5229\u9B54\u65B9\u67E5\u8BE2\u7B7E\u5230\u5931\u8D25[" + _0x2732b9 + "]: " + _0x1a8187);
       }
     } catch (_0x517caa) {
       console.log(_0x517caa);
@@ -1597,10 +1600,10 @@ class _0x333e45 extends _0x24046c {
         } = await this.request(_0x3128b3),
         _0x1564ca = _0x4c672b.get(_0x4485f1, "resultCode", -1);
       if (_0x1564ca == "0000") {
-        this.log("福利魔方签到成功");
+        this.log("\u798F\u5229\u9B54\u65B9\u7B7E\u5230\u6210\u529F");
       } else {
         let _0xfa6532 = _0x4485f1?.["resultMsg"] || "";
-        this.log("福利魔方签到失败[" + _0x1564ca + "]: " + _0xfa6532);
+        this.log("\u798F\u5229\u9B54\u65B9\u7B7E\u5230\u5931\u8D25[" + _0x1564ca + "]: " + _0xfa6532);
       }
     } catch (_0x22c453) {
       console.log(_0x22c453);
@@ -1628,7 +1631,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0x3affb1 = _0x1be38d?.["resultMsg"] || "";
-        this.log("福利魔方查询任务失败[" + _0x56b419 + "]: " + _0x3affb1);
+        this.log("\u798F\u5229\u9B54\u65B9\u67E5\u8BE2\u4EFB\u52A1\u5931\u8D25[" + _0x56b419 + "]: " + _0x3affb1);
       }
     } catch (_0x172024) {
       console.log(_0x172024);
@@ -1657,10 +1660,10 @@ class _0x333e45 extends _0x24046c {
       let _0x213f2c = _0x4c672b.get(_0x422380, "resultCode", -1);
       this.t_flmf_task = Date.now();
       if (_0x213f2c == "0000") {
-        this.log("完成任务[" + _0x3534eb + "]成功");
+        this.log("\u5B8C\u6210\u4EFB\u52A1[" + _0x3534eb + "]\u6210\u529F");
       } else {
         let _0x2aacea = _0x422380?.["resultMsg"] || "";
-        this.log("完成任务[" + _0x3534eb + "]失败[" + _0x213f2c + "]: " + _0x2aacea);
+        this.log("\u5B8C\u6210\u4EFB\u52A1[" + _0x3534eb + "]\u5931\u8D25[" + _0x213f2c + "]: " + _0x2aacea);
       }
     } catch (_0x229114) {
       console.log(_0x229114);
@@ -1669,7 +1672,7 @@ class _0x333e45 extends _0x24046c {
   async woread_api(_0x34880c) {
     let _0x1db761 = await this.request(_0x4c672b.copy(_0x34880c)),
       _0x3e48ad = _0x1db761?.["result"]?.["message"] || "";
-    _0x3e48ad?.["includes"]("登录已过期") && (await this.woread_auth()) && (await this.woread_login()) && (_0x1db761 = await this.request(_0x4c672b.copy(_0x34880c)));
+    _0x3e48ad?.["includes"]("\u767B\u5F55\u5DF2\u8FC7\u671F") && (await this.woread_auth()) && (await this.woread_login()) && (_0x1db761 = await this.request(_0x4c672b.copy(_0x34880c)));
     return _0x1db761;
   }
   switch_woread_token(_0x56b38b) {
@@ -1710,7 +1713,7 @@ class _0x333e45 extends _0x24046c {
         this.switch_woread_token(this.woread_accesstoken);
       } else {
         let _0x2c8b85 = _0x10c758?.["message"] || "";
-        this.log("阅读专区获取accesstoken失败[" + _0x1540b2 + "]: " + _0x2c8b85);
+        this.log("\u9605\u8BFB\u4E13\u533A\u83B7\u53D6accesstoken\u5931\u8D25[" + _0x1540b2 + "]: " + _0x2c8b85);
       }
     } catch (_0x3f8fdd) {
       console.log(_0x3f8fdd);
@@ -1758,7 +1761,7 @@ class _0x333e45 extends _0x24046c {
         Object.assign(this, _0x3bda74);
       } else {
         let _0x32f4f4 = _0x28bf76?.["message"] || "";
-        this.log("阅读专区获取token失败[" + _0x5e778d + "]: " + _0x32f4f4);
+        this.log("\u9605\u8BFB\u4E13\u533A\u83B7\u53D6token\u5931\u8D25[" + _0x5e778d + "]: " + _0x32f4f4);
       }
     } catch (_0x315b1a) {
       console.log(_0x315b1a);
@@ -1786,7 +1789,7 @@ class _0x333e45 extends _0x24046c {
         this.switch_woread_token(this.woread_m_accesstoken);
       } else {
         let _0x2ce2e6 = _0x531e72?.["message"] || "";
-        this.log("阅读专区获取accesstoken失败[" + _0x1f1163 + "]: " + _0x2ce2e6);
+        this.log("\u9605\u8BFB\u4E13\u533A\u83B7\u53D6accesstoken\u5931\u8D25[" + _0x1f1163 + "]: " + _0x2ce2e6);
       }
     } catch (_0x53fed2) {
       console.log(_0x53fed2);
@@ -1825,7 +1828,7 @@ class _0x333e45 extends _0x24046c {
         _0x1dc636 = true;
       } else {
         let _0xab03b2 = _0x253805?.["message"] || "";
-        this.log("阅读专区获取token失败[" + _0x2410c4 + "]: " + _0xab03b2);
+        this.log("\u9605\u8BFB\u4E13\u533A\u83B7\u53D6token\u5931\u8D25[" + _0x2410c4 + "]: " + _0xab03b2);
       }
     } catch (_0x5b576c) {
       console.log(_0x5b576c);
@@ -1857,7 +1860,7 @@ class _0x333e45 extends _0x24046c {
         _0x5028e4?.["data"] == -1 && (await this.woread_addUserSeeVideo(_0x12ab92));
       } else {
         let _0x366c05 = _0x5028e4?.["message"] || "";
-        this.log("阅读活动[" + _0x12ab92 + "]查询抽奖视频失败[" + _0x3c20dc + "]: " + _0x366c05);
+        this.log("\u9605\u8BFB\u6D3B\u52A8[" + _0x12ab92 + "]\u67E5\u8BE2\u62BD\u5956\u89C6\u9891\u5931\u8D25[" + _0x3c20dc + "]: " + _0x366c05);
       }
     } catch (_0x3cd6e0) {
       console.log(_0x3cd6e0);
@@ -1886,10 +1889,10 @@ class _0x333e45 extends _0x24046c {
         } = await this.woread_api(_0x39d9cb),
         _0x2480f3 = _0x4c672b.get(_0x4521b8, "code", -1);
       if (_0x2480f3 == "0000") {
-        this.log("阅读活动[" + _0x27e075 + "]看视频增加抽奖次数成功");
+        this.log("\u9605\u8BFB\u6D3B\u52A8[" + _0x27e075 + "]\u770B\u89C6\u9891\u589E\u52A0\u62BD\u5956\u6B21\u6570\u6210\u529F");
       } else {
         let _0x4a4ae0 = _0x4521b8?.["message"] || "";
-        this.log("阅读活动[" + _0x27e075 + "]看视频增加抽奖次数失败[" + _0x2480f3 + "]: " + _0x4a4ae0);
+        this.log("\u9605\u8BFB\u6D3B\u52A8[" + _0x27e075 + "]\u770B\u89C6\u9891\u589E\u52A0\u62BD\u5956\u6B21\u6570\u5931\u8D25[" + _0x2480f3 + "]: " + _0x4a4ae0);
       }
     } catch (_0x4b1856) {
       console.log(_0x4b1856);
@@ -1917,14 +1920,14 @@ class _0x333e45 extends _0x24046c {
         _0x1a6ca5 = _0x4c672b.get(_0x4f72f1, "code", -1);
       if (_0x1a6ca5 == "0000") {
         let _0x8a22f5 = _0x4f72f1?.["data"] || 0;
-        this.log("阅读活动[" + _0x5ba90a + "]可以抽奖" + _0x8a22f5 + "次");
+        this.log("\u9605\u8BFB\u6D3B\u52A8[" + _0x5ba90a + "]\u53EF\u4EE5\u62BD\u5956" + _0x8a22f5 + "\u6B21");
         while (_0x8a22f5-- > 0) {
           await _0x4c672b.wait(5000);
           await this.woread_doDraw(_0x5ba90a);
         }
       } else {
         let _0x3842fa = _0x4f72f1?.["message"] || "";
-        this.log("阅读活动[" + _0x5ba90a + "]查询抽奖次数失败[" + _0x1a6ca5 + "]: " + _0x3842fa);
+        this.log("\u9605\u8BFB\u6D3B\u52A8[" + _0x5ba90a + "]\u67E5\u8BE2\u62BD\u5956\u6B21\u6570\u5931\u8D25[" + _0x1a6ca5 + "]: " + _0x3842fa);
       }
     } catch (_0x5a0a0a) {
       console.log(_0x5a0a0a);
@@ -1953,11 +1956,11 @@ class _0x333e45 extends _0x24046c {
       this.t_woread_draw = Date.now();
       let _0x358f34 = _0x4c672b.get(_0x9db755, "code", -1);
       if (_0x358f34 == "0000") {
-        this.log("阅读活动[" + _0x2ff3ba + "]打卡增加抽奖次数成功");
+        this.log("\u9605\u8BFB\u6D3B\u52A8[" + _0x2ff3ba + "]\u6253\u5361\u589E\u52A0\u62BD\u5956\u6B21\u6570\u6210\u529F");
       } else {
         if (_0x358f34 != "9999") {
           let _0x494cdf = _0x9db755?.["message"] || "";
-          this.log("阅读活动[" + _0x2ff3ba + "]打卡增加抽奖次数失败[" + _0x358f34 + "]: " + _0x494cdf);
+          this.log("\u9605\u8BFB\u6D3B\u52A8[" + _0x2ff3ba + "]\u6253\u5361\u589E\u52A0\u62BD\u5956\u6B21\u6570\u5931\u8D25[" + _0x358f34 + "]: " + _0x494cdf);
         }
       }
     } catch (_0x3bd142) {
@@ -1990,10 +1993,10 @@ class _0x333e45 extends _0x24046c {
         const _0x2e804e = {
           notify: true
         };
-        this.log("阅读活动[" + _0x397f0b + "]抽奖: " + (_0x33f591?.["data"]?.["prizedesc"] || "空气"), _0x2e804e);
+        this.log("\u9605\u8BFB\u6D3B\u52A8[" + _0x397f0b + "]\u62BD\u5956: " + (_0x33f591?.["data"]?.["prizedesc"] || "\u7A7A\u6C14"), _0x2e804e);
       } else {
         let _0x4d9a5c = _0x33f591?.["message"] || "";
-        this.log("阅读活动[" + _0x397f0b + "]抽奖失败[" + _0x81a5cb + "]: " + _0x4d9a5c);
+        this.log("\u9605\u8BFB\u6D3B\u52A8[" + _0x397f0b + "]\u62BD\u5956\u5931\u8D25[" + _0x81a5cb + "]: " + _0x4d9a5c);
       }
     } catch (_0x4cbb04) {
       console.log(_0x4cbb04);
@@ -2021,10 +2024,10 @@ class _0x333e45 extends _0x24046c {
         const _0x45bce9 = {
           notify: true
         };
-        this.log("阅读区话费红包余额: " + _0x2284a4, _0x45bce9);
+        this.log("\u9605\u8BFB\u533A\u8BDD\u8D39\u7EA2\u5305\u4F59\u989D: " + _0x2284a4, _0x45bce9);
       } else {
         let _0xd876d5 = _0x3fd342?.["message"] || "";
-        this.log("查询阅读区话费红包余额失败[" + _0x6ce29d + "]: " + _0xd876d5);
+        this.log("\u67E5\u8BE2\u9605\u8BFB\u533A\u8BDD\u8D39\u7EA2\u5305\u4F59\u989D\u5931\u8D25[" + _0x6ce29d + "]: " + _0xd876d5);
       }
     } catch (_0x46f510) {
       console.log(_0x46f510);
@@ -2052,10 +2055,10 @@ class _0x333e45 extends _0x24046c {
         const _0x45667c = {
           notify: true
         };
-        this.log("阅读区话费红包余额: " + _0x29f71b, _0x45667c);
+        this.log("\u9605\u8BFB\u533A\u8BDD\u8D39\u7EA2\u5305\u4F59\u989D: " + _0x29f71b, _0x45667c);
       } else {
         let _0x51a7d0 = _0x5c632b?.["message"] || "";
-        this.log("查询阅读区话费红包余额失败[" + _0x5ec93b + "]: " + _0x51a7d0);
+        this.log("\u67E5\u8BE2\u9605\u8BFB\u533A\u8BDD\u8D39\u7EA2\u5305\u4F59\u989D\u5931\u8D25[" + _0x5ec93b + "]: " + _0x51a7d0);
       }
     } catch (_0x1fbab2) {
       console.log(_0x1fbab2);
@@ -2109,11 +2112,11 @@ class _0x333e45 extends _0x24046c {
         } = await this.request(_0x5e4f85),
         _0x4851e5 = _0x4c672b.get(_0x1f9eec, "code", -1);
       if (_0x4851e5 == "0000") {
-        this.log("刷新读小说时间: " + _0x1f9eec?.["data"]?.["readtime"] / 60 / 1000 + "分钟");
+        this.log("\u5237\u65B0\u8BFB\u5C0F\u8BF4\u65F6\u95F4: " + _0x1f9eec?.["data"]?.["readtime"] / 60 / 1000 + "\u5206\u949F");
         _0x1f9eec?.["data"]?.["readtime"] >= 3600000 && (this.read_stop = true);
       } else {
         let _0x797aad = _0x1f9eec?.["message"] || "";
-        this.log("刷新读小说时间失败[" + _0x4851e5 + "]: " + _0x797aad);
+        this.log("\u5237\u65B0\u8BFB\u5C0F\u8BF4\u65F6\u95F4\u5931\u8D25[" + _0x4851e5 + "]: " + _0x797aad);
       }
     } catch (_0x5e3330) {
       console.log(_0x5e3330);
@@ -2167,11 +2170,11 @@ class _0x333e45 extends _0x24046c {
         } = await this.request(_0x1eab5b),
         _0x22bdf8 = _0x4c672b.get(_0xc66009, "code", -1);
       if (_0x22bdf8 == "0000") {
-        this.log("刷新读小说时间: " + _0xc66009?.["data"]?.["readtime"] / 60 / 1000 + "分钟");
+        this.log("\u5237\u65B0\u8BFB\u5C0F\u8BF4\u65F6\u95F4: " + _0xc66009?.["data"]?.["readtime"] / 60 / 1000 + "\u5206\u949F");
         _0xc66009?.["data"]?.["readtime"] >= 3600000 && (this.read_stop = true);
       } else {
         let _0x179f91 = _0xc66009?.["message"] || "";
-        this.log("刷新读小说时间失败[" + _0x22bdf8 + "]: " + _0x179f91);
+        this.log("\u5237\u65B0\u8BFB\u5C0F\u8BF4\u65F6\u95F4\u5931\u8D25[" + _0x22bdf8 + "]: " + _0x179f91);
       }
     } catch (_0x9c51e0) {
       console.log(_0x9c51e0);
@@ -2209,11 +2212,11 @@ class _0x333e45 extends _0x24046c {
           const _0x4e6bbb = {
             notify: true
           };
-          this.log("龟兔赛跑今天已完成", _0x4e6bbb);
+          this.log("\u9F9F\u5154\u8D5B\u8DD1\u4ECA\u5929\u5DF2\u5B8C\u6210", _0x4e6bbb);
           return;
         }
         this.need_read_rabbit = true;
-        this.log("龟兔赛跑进度: " + _0x3ba6a6 + "/" + _0x22d281 + "分钟");
+        this.log("\u9F9F\u5154\u8D5B\u8DD1\u8FDB\u5EA6: " + _0x3ba6a6 + "/" + _0x22d281 + "\u5206\u949F");
         if (_0x2b7eba == 1) {
           await this.rabblit_wakeRabbit();
         }
@@ -2222,7 +2225,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0x3bbb94 = _0x22129d?.["message"] || "";
-        _0x3bbb94?.["includes"]("未参加") && !_0x166566.join_retry && (await this.rabblit_joinRuning()) ? (_0x166566.join_retry = true, await this.rabblit_queryActivityData(_0x166566)) : this.log("龟兔赛跑查询状态失败[" + _0x2490e0 + "]: " + _0x3bbb94);
+        _0x3bbb94?.["includes"]("\u672A\u53C2\u52A0") && !_0x166566.join_retry && (await this.rabblit_joinRuning()) ? (_0x166566.join_retry = true, await this.rabblit_queryActivityData(_0x166566)) : this.log("\u9F9F\u5154\u8D5B\u8DD1\u67E5\u8BE2\u72B6\u6001\u5931\u8D25[" + _0x2490e0 + "]: " + _0x3bbb94);
       }
     } catch (_0x5a5d83) {
       console.log(_0x5a5d83);
@@ -2251,10 +2254,10 @@ class _0x333e45 extends _0x24046c {
         _0x1dfb20 = _0x4c672b.get(_0x19cc43, "code", -1);
       if (_0x1dfb20 == "0000") {
         _0x2a36d7 = true;
-        this.log("龟兔赛跑报名成功");
+        this.log("\u9F9F\u5154\u8D5B\u8DD1\u62A5\u540D\u6210\u529F");
       } else {
         let _0x5d645 = _0x19cc43?.["message"] || "";
-        this.log("龟兔赛跑报名失败[" + _0x1dfb20 + "]: " + _0x5d645);
+        this.log("\u9F9F\u5154\u8D5B\u8DD1\u62A5\u540D\u5931\u8D25[" + _0x1dfb20 + "]: " + _0x5d645);
       }
     } catch (_0x2c4557) {
       console.log(_0x2c4557);
@@ -2289,10 +2292,10 @@ class _0x333e45 extends _0x24046c {
         const _0x19370a = {
           notify: true
         };
-        this.log("龟兔赛跑唤醒兔子抽奖: " + (_0x5f4ee4?.["data"]?.["prizedesc"] || "空气"), _0x19370a);
+        this.log("\u9F9F\u5154\u8D5B\u8DD1\u5524\u9192\u5154\u5B50\u62BD\u5956: " + (_0x5f4ee4?.["data"]?.["prizedesc"] || "\u7A7A\u6C14"), _0x19370a);
       } else {
         let _0x59d84e = _0x5f4ee4?.["message"] || "";
-        this.log("龟兔赛跑唤醒兔子失败[" + _0x531c58 + "]: " + _0x59d84e);
+        this.log("\u9F9F\u5154\u8D5B\u8DD1\u5524\u9192\u5154\u5B50\u5931\u8D25[" + _0x531c58 + "]: " + _0x59d84e);
       }
     } catch (_0x4b75db) {
       console.log(_0x4b75db);
@@ -2325,10 +2328,10 @@ class _0x333e45 extends _0x24046c {
         const _0x2f0d17 = {
           notify: true
         };
-        this.log("龟兔赛跑终点抽奖: " + (_0x254943?.["data"]?.["prizedesc"] || "空气"), _0x2f0d17);
+        this.log("\u9F9F\u5154\u8D5B\u8DD1\u7EC8\u70B9\u62BD\u5956: " + (_0x254943?.["data"]?.["prizedesc"] || "\u7A7A\u6C14"), _0x2f0d17);
       } else {
         let _0x3e4556 = _0x254943?.["message"] || "";
-        this.log("龟兔赛跑终点抽奖失败[" + _0x6bb8e + "]: " + _0x3e4556);
+        this.log("\u9F9F\u5154\u8D5B\u8DD1\u7EC8\u70B9\u62BD\u5956\u5931\u8D25[" + _0x6bb8e + "]: " + _0x3e4556);
       }
     } catch (_0x4f0c17) {
       console.log(_0x4f0c17);
@@ -2359,7 +2362,7 @@ class _0x333e45 extends _0x24046c {
         _0x55391c = _0x250122;
       } else {
         let _0xa936bf = _0x3fef2a?.["message"] || "";
-        this.log("阅光宝盒查询活动失败[" + _0x1f3aaf + "]: " + _0xa936bf);
+        this.log("\u9605\u5149\u5B9D\u76D2\u67E5\u8BE2\u6D3B\u52A8\u5931\u8D25[" + _0x1f3aaf + "]: " + _0xa936bf);
       }
     } catch (_0x1b94a6) {
       console.log(_0x1b94a6);
@@ -2396,7 +2399,7 @@ class _0x333e45 extends _0x24046c {
             case 0:
               {
                 this.moonbox_task_record[_0x313ae9] = true;
-                this.log("阅光宝盒[" + _0x313ae9 + "]进度: " + parseInt(_0x3fdd11) + "/" + _0x53dd8d + "分钟");
+                this.log("\u9605\u5149\u5B9D\u76D2[" + _0x313ae9 + "]\u8FDB\u5EA6: " + parseInt(_0x3fdd11) + "/" + _0x53dd8d + "\u5206\u949F");
                 break;
               }
             case 2:
@@ -2411,7 +2414,7 @@ class _0x333e45 extends _0x24046c {
                   const _0x52e7f2 = {
                     notify: true
                   };
-                  this.log("阅光宝盒任务[" + _0x313ae9 + "]已完成", _0x52e7f2);
+                  this.log("\u9605\u5149\u5B9D\u76D2\u4EFB\u52A1[" + _0x313ae9 + "]\u5DF2\u5B8C\u6210", _0x52e7f2);
                 }
                 break;
               }
@@ -2419,7 +2422,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0x325aa9 = _0x1d541c?.["message"] || "";
-        _0x325aa9?.["includes"]("未领取") && !_0x149c93.activate_retry && (await this.moonbox_queryActiveTaskList()) ? (_0x149c93.activate_retry = true, await this.moonbox_queryCurTaskStatus(_0x149c93)) : this.log("阅光宝盒查询任务状态失败[" + _0x1054fb + "]: " + _0x325aa9);
+        _0x325aa9?.["includes"]("\u672A\u9886\u53D6") && !_0x149c93.activate_retry && (await this.moonbox_queryActiveTaskList()) ? (_0x149c93.activate_retry = true, await this.moonbox_queryCurTaskStatus(_0x149c93)) : this.log("\u9605\u5149\u5B9D\u76D2\u67E5\u8BE2\u4EFB\u52A1\u72B6\u6001\u5931\u8D25[" + _0x1054fb + "]: " + _0x325aa9);
       }
     } catch (_0x4df7a0) {
       console.log(_0x4df7a0);
@@ -2449,10 +2452,10 @@ class _0x333e45 extends _0x24046c {
         const _0x432c2b = {
           notify: true
         };
-        this.log("阅光宝盒[" + _0x40efdd?.["data"]?.["taskDetail"]?.["taskName"] + "]领取奖励成功: " + _0x40efdd?.["data"]?.["exchangeResult"]?.["materialGroupInfo"]?.["groupName"], _0x432c2b);
+        this.log("\u9605\u5149\u5B9D\u76D2[" + _0x40efdd?.["data"]?.["taskDetail"]?.["taskName"] + "]\u9886\u53D6\u5956\u52B1\u6210\u529F: " + _0x40efdd?.["data"]?.["exchangeResult"]?.["materialGroupInfo"]?.["groupName"], _0x432c2b);
       } else {
         let _0x355fe8 = _0x40efdd?.["message"] || "";
-        this.log("阅光宝盒[" + _0x4af677?.["taskDetail"]?.["taskName"] + "]领取奖励失败[" + _0x37bf24 + "]: " + _0x355fe8);
+        this.log("\u9605\u5149\u5B9D\u76D2[" + _0x4af677?.["taskDetail"]?.["taskName"] + "]\u9886\u53D6\u5956\u52B1\u5931\u8D25[" + _0x37bf24 + "]: " + _0x355fe8);
       }
     } catch (_0x5d1580) {
       console.log(_0x5d1580);
@@ -2484,11 +2487,11 @@ class _0x333e45 extends _0x24046c {
               _0x243b54 = parseInt(_0x1792cf.taskDetail.taskValue);
             return _0x3ecb2c - _0x243b54;
           }),
-          _0xe49ce3 = _0x1cff30.filter(_0x5ed25d => _0x5ed25d.maxNum - _0x5ed25d.receiveNum > 0 && _0x5ed25d.taskDetail.materialGroup.groupName.includes("红包"));
-        _0xe49ce3?.["length"] ? await this.moonbox_receiveActiveTask(_0xe49ce3) : this.log("没有可领取的阅光宝盒红包任务了");
+          _0xe49ce3 = _0x1cff30.filter(_0x5ed25d => _0x5ed25d.maxNum - _0x5ed25d.receiveNum > 0 && _0x5ed25d.taskDetail.materialGroup.groupName.includes("\u7EA2\u5305"));
+        _0xe49ce3?.["length"] ? await this.moonbox_receiveActiveTask(_0xe49ce3) : this.log("\u6CA1\u6709\u53EF\u9886\u53D6\u7684\u9605\u5149\u5B9D\u76D2\u7EA2\u5305\u4EFB\u52A1\u4E86");
       } else {
         let _0x37141c = _0x391626?.["message"] || "";
-        this.log("阅光宝盒查询可领取任务失败[" + _0x42ede6 + "]: " + _0x37141c);
+        this.log("\u9605\u5149\u5B9D\u76D2\u67E5\u8BE2\u53EF\u9886\u53D6\u4EFB\u52A1\u5931\u8D25[" + _0x42ede6 + "]: " + _0x37141c);
       }
     } catch (_0x3346d3) {
       console.log(_0x3346d3);
@@ -2522,11 +2525,11 @@ class _0x333e45 extends _0x24046c {
         _0x45290e = _0x4c672b.get(_0x4cc772, "code", -1);
       if (_0x45290e == "0000") {
         this.moonbox_task_record[_0x3180c7] = true;
-        this.log("领取阅光宝盒任务[" + _0x3180c7 + "]成功");
+        this.log("\u9886\u53D6\u9605\u5149\u5B9D\u76D2\u4EFB\u52A1[" + _0x3180c7 + "]\u6210\u529F");
       } else {
         let _0x4cc9d9 = _0x4cc772?.["message"] || "";
-        this.log("领取阅光宝盒任务[" + _0x3180c7 + "]失败[" + _0x45290e + "]: " + _0x4cc9d9);
-        (_0x4cc9d9?.["includes"]("今天无法完成") || _0x4cc9d9?.["includes"]("领光了")) && _0x17d7d6.length > 0 && (await _0x4c672b.wait(500), await this.moonbox_receiveActiveTask(_0x17d7d6, _0x642063));
+        this.log("\u9886\u53D6\u9605\u5149\u5B9D\u76D2\u4EFB\u52A1[" + _0x3180c7 + "]\u5931\u8D25[" + _0x45290e + "]: " + _0x4cc9d9);
+        (_0x4cc9d9?.["includes"]("\u4ECA\u5929\u65E0\u6CD5\u5B8C\u6210") || _0x4cc9d9?.["includes"]("\u9886\u5149\u4E86")) && _0x17d7d6.length > 0 && (await _0x4c672b.wait(500), await this.moonbox_receiveActiveTask(_0x17d7d6, _0x642063));
       }
     } catch (_0x2fbd0d) {
       console.log(_0x2fbd0d);
@@ -2556,7 +2559,7 @@ class _0x333e45 extends _0x24046c {
         switch (_0x3fc97e?.["data"]) {
           case "2":
             {
-              this.log("阅光宝盒去阅读两分钟抽奖");
+              this.log("\u9605\u5149\u5B9D\u76D2\u53BB\u9605\u8BFB\u4E24\u5206\u949F\u62BD\u5956");
               this.switch_woread_token(this.woread_m_accesstoken);
               const _0x4dd67c = {
                 readTime: 2
@@ -2568,24 +2571,24 @@ class _0x333e45 extends _0x24046c {
             }
           case "3":
             {
-              this.log("阅光宝盒今天已抽奖");
+              this.log("\u9605\u5149\u5B9D\u76D2\u4ECA\u5929\u5DF2\u62BD\u5956");
               break;
             }
           case "4":
             {
-              this.log("阅光宝盒今天可以抽奖");
+              this.log("\u9605\u5149\u5B9D\u76D2\u4ECA\u5929\u53EF\u4EE5\u62BD\u5956");
               await this.moonbox_drawReadActivePrize();
               break;
             }
           default:
             {
-              this.log("阅光宝盒抽奖状态[" + _0x3fc97e?.["data"] + "]");
+              this.log("\u9605\u5149\u5B9D\u76D2\u62BD\u5956\u72B6\u6001[" + _0x3fc97e?.["data"] + "]");
               break;
             }
         }
       } else {
         let _0x9b31af = _0x3fc97e?.["message"] || "";
-        this.log("查询阅光宝盒抽奖次数失败[" + _0x479ae3 + "]: " + _0x9b31af);
+        this.log("\u67E5\u8BE2\u9605\u5149\u5B9D\u76D2\u62BD\u5956\u6B21\u6570\u5931\u8D25[" + _0x479ae3 + "]: " + _0x9b31af);
       }
     } catch (_0x71eb7f) {
       console.log(_0x71eb7f);
@@ -2615,10 +2618,10 @@ class _0x333e45 extends _0x24046c {
         const _0x4d8266 = {
           notify: true
         };
-        this.log("阅光宝盒抽奖: " + (_0x1633e7?.["data"]?.["prizedesc"] || JSON.stringify(_0x1633e7)), _0x4d8266);
+        this.log("\u9605\u5149\u5B9D\u76D2\u62BD\u5956: " + (_0x1633e7?.["data"]?.["prizedesc"] || JSON.stringify(_0x1633e7)), _0x4d8266);
       } else {
         let _0x55fb06 = _0x1633e7?.["message"] || "";
-        this.log("阅光宝盒抽奖失败[" + _0x27c470 + "]: " + _0x55fb06);
+        this.log("\u9605\u5149\u5B9D\u76D2\u62BD\u5956\u5931\u8D25[" + _0x27c470 + "]: " + _0x55fb06);
       }
     } catch (_0xf0a009) {
       console.log(_0xf0a009);
@@ -2649,7 +2652,7 @@ class _0x333e45 extends _0x24046c {
         _0x55391c = _0x3f90b8;
       } else {
         let _0x2087f5 = _0x425b85?.["message"] || "";
-        this.log("阅光宝盒查询活动失败[" + _0x40ba28 + "]: " + _0x2087f5);
+        this.log("\u9605\u5149\u5B9D\u76D2\u67E5\u8BE2\u6D3B\u52A8\u5931\u8D25[" + _0x40ba28 + "]: " + _0x2087f5);
       }
     } catch (_0xfd1d67) {
       console.log(_0xfd1d67);
@@ -2686,7 +2689,7 @@ class _0x333e45 extends _0x24046c {
             case 0:
               {
                 this.moonbox_task_record[_0x4d3802] = true;
-                this.log("阅光宝盒[" + _0x4d3802 + "]进度: " + parseInt(_0x58b1af) + "/" + _0x54fad8 + "分钟");
+                this.log("\u9605\u5149\u5B9D\u76D2[" + _0x4d3802 + "]\u8FDB\u5EA6: " + parseInt(_0x58b1af) + "/" + _0x54fad8 + "\u5206\u949F");
                 break;
               }
             case 2:
@@ -2701,7 +2704,7 @@ class _0x333e45 extends _0x24046c {
                   const _0x14eeaa = {
                     notify: true
                   };
-                  this.log("阅光宝盒任务[" + _0x4d3802 + "]已完成", _0x14eeaa);
+                  this.log("\u9605\u5149\u5B9D\u76D2\u4EFB\u52A1[" + _0x4d3802 + "]\u5DF2\u5B8C\u6210", _0x14eeaa);
                 }
                 break;
               }
@@ -2709,7 +2712,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0x4b5302 = _0x51e7c5?.["message"] || "";
-        _0x4b5302?.["includes"]("未领取") && !_0xcef68f.activate_retry && (await this.moonbox_queryActiveTaskList()) ? (_0xcef68f.activate_retry = true, await this.moonbox_m_queryCurTaskStatus(_0xcef68f)) : this.log("阅光宝盒查询任务状态失败[" + _0x3e8bcf + "]: " + _0x4b5302);
+        _0x4b5302?.["includes"]("\u672A\u9886\u53D6") && !_0xcef68f.activate_retry && (await this.moonbox_queryActiveTaskList()) ? (_0xcef68f.activate_retry = true, await this.moonbox_m_queryCurTaskStatus(_0xcef68f)) : this.log("\u9605\u5149\u5B9D\u76D2\u67E5\u8BE2\u4EFB\u52A1\u72B6\u6001\u5931\u8D25[" + _0x3e8bcf + "]: " + _0x4b5302);
       }
     } catch (_0x2b3c91) {
       console.log(_0x2b3c91);
@@ -2739,10 +2742,10 @@ class _0x333e45 extends _0x24046c {
         const _0x1dd73a = {
           notify: true
         };
-        this.log("阅光宝盒[" + _0x27b401?.["data"]?.["taskDetail"]?.["taskName"] + "]领取奖励成功: " + _0x27b401?.["data"]?.["exchangeResult"]?.["materialGroupInfo"]?.["groupName"], _0x1dd73a);
+        this.log("\u9605\u5149\u5B9D\u76D2[" + _0x27b401?.["data"]?.["taskDetail"]?.["taskName"] + "]\u9886\u53D6\u5956\u52B1\u6210\u529F: " + _0x27b401?.["data"]?.["exchangeResult"]?.["materialGroupInfo"]?.["groupName"], _0x1dd73a);
       } else {
         let _0x3a226a = _0x27b401?.["message"] || "";
-        this.log("阅光宝盒[" + _0x3a9ed6?.["taskDetail"]?.["taskName"] + "]领取奖励失败[" + _0x1b57e3 + "]: " + _0x3a226a);
+        this.log("\u9605\u5149\u5B9D\u76D2[" + _0x3a9ed6?.["taskDetail"]?.["taskName"] + "]\u9886\u53D6\u5956\u52B1\u5931\u8D25[" + _0x1b57e3 + "]: " + _0x3a226a);
       }
     } catch (_0x5f2f11) {
       console.log(_0x5f2f11);
@@ -2774,11 +2777,11 @@ class _0x333e45 extends _0x24046c {
               _0x5d17d1 = parseInt(_0x533bfe.taskDetail.taskValue);
             return _0x1619db - _0x5d17d1;
           }),
-          _0x590d73 = _0x1a7988.filter(_0xa65315 => _0xa65315.maxNum - _0xa65315.receiveNum > 0 && _0xa65315.taskDetail.materialGroup.groupName.includes("红包"));
-        _0x590d73?.["length"] ? await this.moonbox_m_receiveActiveTask(_0x590d73) : this.log("没有可领取的阅光宝盒红包任务了");
+          _0x590d73 = _0x1a7988.filter(_0xa65315 => _0xa65315.maxNum - _0xa65315.receiveNum > 0 && _0xa65315.taskDetail.materialGroup.groupName.includes("\u7EA2\u5305"));
+        _0x590d73?.["length"] ? await this.moonbox_m_receiveActiveTask(_0x590d73) : this.log("\u6CA1\u6709\u53EF\u9886\u53D6\u7684\u9605\u5149\u5B9D\u76D2\u7EA2\u5305\u4EFB\u52A1\u4E86");
       } else {
         let _0x51d622 = _0x591b1d?.["message"] || "";
-        this.log("阅光宝盒查询可领取任务失败[" + _0x112619 + "]: " + _0x51d622);
+        this.log("\u9605\u5149\u5B9D\u76D2\u67E5\u8BE2\u53EF\u9886\u53D6\u4EFB\u52A1\u5931\u8D25[" + _0x112619 + "]: " + _0x51d622);
       }
     } catch (_0x39e415) {
       console.log(_0x39e415);
@@ -2812,11 +2815,11 @@ class _0x333e45 extends _0x24046c {
         _0x12d65d = _0x4c672b.get(_0x5b661a, "code", -1);
       if (_0x12d65d == "0000") {
         this.moonbox_task_record[_0x5915e5] = true;
-        this.log("领取阅光宝盒任务[" + _0x5915e5 + "]成功");
+        this.log("\u9886\u53D6\u9605\u5149\u5B9D\u76D2\u4EFB\u52A1[" + _0x5915e5 + "]\u6210\u529F");
       } else {
         let _0x1347e6 = _0x5b661a?.["message"] || "";
-        this.log("领取阅光宝盒任务[" + _0x5915e5 + "]失败[" + _0x12d65d + "]: " + _0x1347e6);
-        (_0x1347e6?.["includes"]("今天无法完成") || _0x1347e6?.["includes"]("领光了")) && _0x222667.length > 0 && (await _0x4c672b.wait(500), await this.moonbox_m_receiveActiveTask(_0x222667, _0x20f0f8));
+        this.log("\u9886\u53D6\u9605\u5149\u5B9D\u76D2\u4EFB\u52A1[" + _0x5915e5 + "]\u5931\u8D25[" + _0x12d65d + "]: " + _0x1347e6);
+        (_0x1347e6?.["includes"]("\u4ECA\u5929\u65E0\u6CD5\u5B8C\u6210") || _0x1347e6?.["includes"]("\u9886\u5149\u4E86")) && _0x222667.length > 0 && (await _0x4c672b.wait(500), await this.moonbox_m_receiveActiveTask(_0x222667, _0x20f0f8));
       }
     } catch (_0x26b16f) {
       console.log(_0x26b16f);
@@ -2846,7 +2849,7 @@ class _0x333e45 extends _0x24046c {
         switch (_0x3ac100?.["message"]) {
           case "2":
             {
-              this.log("阅光宝盒去阅读两分钟抽奖");
+              this.log("\u9605\u5149\u5B9D\u76D2\u53BB\u9605\u8BFB\u4E24\u5206\u949F\u62BD\u5956");
               const _0x177649 = {
                 readTime: 2
               };
@@ -2856,24 +2859,24 @@ class _0x333e45 extends _0x24046c {
             }
           case "3":
             {
-              this.log("阅光宝盒今天已抽奖");
+              this.log("\u9605\u5149\u5B9D\u76D2\u4ECA\u5929\u5DF2\u62BD\u5956");
               break;
             }
           case "4":
             {
-              this.log("阅光宝盒今天可以抽奖");
+              this.log("\u9605\u5149\u5B9D\u76D2\u4ECA\u5929\u53EF\u4EE5\u62BD\u5956");
               await this.moonbox_m_drawReadActivePrize();
               break;
             }
           default:
             {
-              this.log("阅光宝盒抽奖状态[" + _0x3ac100?.["data"] + "]");
+              this.log("\u9605\u5149\u5B9D\u76D2\u62BD\u5956\u72B6\u6001[" + _0x3ac100?.["data"] + "]");
               break;
             }
         }
       } else {
         let _0x3e13a2 = _0x3ac100?.["message"] || "";
-        this.log("查询阅光宝盒抽奖次数失败[" + _0x446cf9 + "]: " + _0x3e13a2);
+        this.log("\u67E5\u8BE2\u9605\u5149\u5B9D\u76D2\u62BD\u5956\u6B21\u6570\u5931\u8D25[" + _0x446cf9 + "]: " + _0x3e13a2);
       }
     } catch (_0x370229) {
       console.log(_0x370229);
@@ -2903,10 +2906,10 @@ class _0x333e45 extends _0x24046c {
         const _0x75d6a5 = {
           notify: true
         };
-        this.log("阅光宝盒抽奖: " + (_0x13c8d4?.["data"]?.["prizedesc"] || JSON.stringify(_0x13c8d4)), _0x75d6a5);
+        this.log("\u9605\u5149\u5B9D\u76D2\u62BD\u5956: " + (_0x13c8d4?.["data"]?.["prizedesc"] || JSON.stringify(_0x13c8d4)), _0x75d6a5);
       } else {
         let _0x1d2f3b = _0x13c8d4?.["message"] || "";
-        this.log("阅光宝盒抽奖失败[" + _0x3b1c56 + "]: " + _0x1d2f3b);
+        this.log("\u9605\u5149\u5B9D\u76D2\u62BD\u5956\u5931\u8D25[" + _0x3b1c56 + "]: " + _0x1d2f3b);
       }
     } catch (_0x2e18c9) {
       console.log(_0x2e18c9);
@@ -2944,7 +2947,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0x13a7ba = _0x30e605?.["msg"] || "";
-        this.log("联通云盘登录失败[" + _0x4d6db0 + "]: " + _0x13a7ba);
+        this.log("\u8054\u901A\u4E91\u76D8\u767B\u5F55\u5931\u8D25[" + _0x4d6db0 + "]: " + _0x13a7ba);
       }
     } catch (_0x505ae6) {
       console.log(_0x505ae6);
@@ -2983,7 +2986,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0x17b321 = _0x117383?.["meta"]?.["message"] || "";
-        this.log("联通云盘查询任务失败[" + _0x334590 + "]: " + _0x17b321);
+        this.log("\u8054\u901A\u4E91\u76D8\u67E5\u8BE2\u4EFB\u52A1\u5931\u8D25[" + _0x334590 + "]: " + _0x17b321);
       }
     } catch (_0x54a602) {
       console.log(_0x54a602);
@@ -3018,10 +3021,10 @@ class _0x333e45 extends _0x24046c {
           incentiveStatus = 0,
           incentiveMessage = ""
         } = _0x4e3742?.["result"];
-        incentiveStatus == 1 ? this.log("联通云盘完成任务成功") : this.log("联通云盘完成任务失败[" + incentiveStatus + "]: " + incentiveMessage);
+        incentiveStatus == 1 ? this.log("\u8054\u901A\u4E91\u76D8\u5B8C\u6210\u4EFB\u52A1\u6210\u529F") : this.log("\u8054\u901A\u4E91\u76D8\u5B8C\u6210\u4EFB\u52A1\u5931\u8D25[" + incentiveStatus + "]: " + incentiveMessage);
       } else {
         let _0x172131 = _0x4e3742?.["meta"]?.["message"] || "";
-        this.log("联通云盘完成任务错误[" + _0x331ab9 + "]: " + _0x172131);
+        this.log("\u8054\u901A\u4E91\u76D8\u5B8C\u6210\u4EFB\u52A1\u9519\u8BEF[" + _0x331ab9 + "]: " + _0x172131);
       }
     } catch (_0x47d039) {
       console.log(_0x47d039);
@@ -3051,14 +3054,14 @@ class _0x333e45 extends _0x24046c {
         let {
           times = 0
         } = _0x2138c5?.["DATA"];
-        this.log("联通云盘可以抽奖" + times + "次");
+        this.log("\u8054\u901A\u4E91\u76D8\u53EF\u4EE5\u62BD\u5956" + times + "\u6B21");
         while (times-- > 0) {
           await _0x4c672b.wait(1000);
           await this.ltyp_lottery(_0x5644fa);
         }
       } else {
         let _0x54bc65 = _0x2138c5?.["RSP_DESC"] || "";
-        this.log("联通云盘查询抽奖次数失败[" + _0x5ede21 + "]: " + _0x54bc65);
+        this.log("\u8054\u901A\u4E91\u76D8\u67E5\u8BE2\u62BD\u5956\u6B21\u6570\u5931\u8D25[" + _0x5ede21 + "]: " + _0x54bc65);
       }
     } catch (_0xdeafa3) {
       console.log(_0xdeafa3);
@@ -3100,12 +3103,12 @@ class _0x333e45 extends _0x24046c {
           const _0x59a8ae = {
             notify: true
           };
-          this.log("联通云盘抽奖: " + prizeName, _0x59a8ae);
+          this.log("\u8054\u901A\u4E91\u76D8\u62BD\u5956: " + prizeName, _0x59a8ae);
           await this.ltyp_lottery(_0x3f86e4, _0x2e2814);
         }
       } else {
         let _0x2fe581 = _0x3f8809?.["meta"]?.["message"] || "";
-        this.log("联通云盘抽奖错误[" + _0x29e0e0 + "]: " + _0x2fe581);
+        this.log("\u8054\u901A\u4E91\u76D8\u62BD\u5956\u9519\u8BEF[" + _0x29e0e0 + "]: " + _0x2fe581);
       }
     } catch (_0x6e247d) {
       console.log(_0x6e247d);
@@ -3128,7 +3131,7 @@ class _0x333e45 extends _0x24046c {
           await this.act_517_taskList();
         } else {
           let _0xa39ecd = _0x12e6e7?.["message"] || _0x12e6e7?.["msg"] || "";
-          this.log("517活动进入主页失败[" + _0x3f7586 + "]: " + _0xa39ecd);
+          this.log("517\u6D3B\u52A8\u8FDB\u5165\u4E3B\u9875\u5931\u8D25[" + _0x3f7586 + "]: " + _0xa39ecd);
           return;
         }
       }
@@ -3142,7 +3145,7 @@ class _0x333e45 extends _0x24046c {
           let {
             chances: _0xb8ead9
           } = _0x2d9fa8?.["data"];
-          this.log("517活动可以抽奖" + _0xb8ead9 + "次");
+          this.log("517\u6D3B\u52A8\u53EF\u4EE5\u62BD\u5956" + _0xb8ead9 + "\u6B21");
           let _0x4a90fa = false;
           while (_0xb8ead9-- > 0) {
             if (_0x4a90fa) {
@@ -3153,7 +3156,7 @@ class _0x333e45 extends _0x24046c {
           }
         } else {
           let _0x401062 = _0x2d9fa8?.["message"] || _0x2d9fa8?.["msg"] || "";
-          this.log("517活动查询抽奖次数失败[" + _0x5caf5e + "]: " + _0x401062);
+          this.log("517\u6D3B\u52A8\u67E5\u8BE2\u62BD\u5956\u6B21\u6570\u5931\u8D25[" + _0x5caf5e + "]: " + _0x401062);
         }
       }
       {
@@ -3170,10 +3173,10 @@ class _0x333e45 extends _0x24046c {
           const _0x3dbd45 = {
             notify: true
           };
-          this.log("517活动现金进度: " + _0x1053c0 + "/" + _0x248ecd, _0x3dbd45);
+          this.log("517\u6D3B\u52A8\u73B0\u91D1\u8FDB\u5EA6: " + _0x1053c0 + "/" + _0x248ecd, _0x3dbd45);
         } else {
           let _0x53c12d = _0x112b84?.["message"] || _0x112b84?.["msg"] || "";
-          this.log("517活动查询进度失败[" + _0x164969 + "]: " + _0x53c12d);
+          this.log("517\u6D3B\u52A8\u67E5\u8BE2\u8FDB\u5EA6\u5931\u8D25[" + _0x164969 + "]: " + _0x53c12d);
         }
       }
     } catch (_0x55b6a1) {
@@ -3211,10 +3214,10 @@ class _0x333e45 extends _0x24046c {
         } = await this.request(_0x3b78e1),
         _0x3d0976 = _0x4c672b.get(_0x4124a9, "code", _0x2962e5);
       if (_0x3d0976 == "0000") {
-        _0x4124a9?.["data"]?.["uuid"] ? (await _0x4c672b.wait(2000), await this.act_517_winningRecord(_0x4124a9.data.uuid)) : this.log("517活动抽奖失败, 没有返回uuid");
+        _0x4124a9?.["data"]?.["uuid"] ? (await _0x4c672b.wait(2000), await this.act_517_winningRecord(_0x4124a9.data.uuid)) : this.log("517\u6D3B\u52A8\u62BD\u5956\u5931\u8D25, \u6CA1\u6709\u8FD4\u56DEuuid");
       } else {
         let _0x52341d = _0x4124a9?.["message"] || _0x4124a9?.["msg"] || "";
-        this.log("517活动抽奖失败[" + _0x3d0976 + "]: " + _0x52341d);
+        this.log("517\u6D3B\u52A8\u62BD\u5956\u5931\u8D25[" + _0x3d0976 + "]: " + _0x52341d);
       }
     } catch (_0x162e6a) {
       console.log(_0x162e6a);
@@ -3250,17 +3253,17 @@ class _0x333e45 extends _0x24046c {
             notify: true
           };
           if (_0x48f549) {
-            this.log("517活动抽奖: " + _0x48f549, _0x208a94);
+            this.log("517\u6D3B\u52A8\u62BD\u5956: " + _0x48f549, _0x208a94);
           }
           if (showAmount === "1") {
-            this.log("517活动抽奖现金进度: +" + _0x11e55c + " (" + _0x493574 + "/" + _0x2e20be + ")");
+            this.log("517\u6D3B\u52A8\u62BD\u5956\u73B0\u91D1\u8FDB\u5EA6: +" + _0x11e55c + " (" + _0x493574 + "/" + _0x2e20be + ")");
           }
         } else {
-          this.log("517活动抽奖: 空气");
+          this.log("517\u6D3B\u52A8\u62BD\u5956: \u7A7A\u6C14");
         }
       } else {
         let _0xb510ea = _0x171769?.["message"] || _0x171769?.["msg"] || "";
-        this.log("查询517活动抽奖结果失败[" + _0x57336e + "]: " + _0xb510ea);
+        this.log("\u67E5\u8BE2517\u6D3B\u52A8\u62BD\u5956\u7ED3\u679C\u5931\u8D25[" + _0x57336e + "]: " + _0xb510ea);
       }
     } catch (_0x128879) {
       console.log(_0x128879);
@@ -3301,7 +3304,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0x215aee = _0x4ea832?.["message"] || _0x4ea832?.["msg"] || "";
-        this.log("查询517活动抽奖结果失败[" + _0x120b88 + "]: " + _0x215aee);
+        this.log("\u67E5\u8BE2517\u6D3B\u52A8\u62BD\u5956\u7ED3\u679C\u5931\u8D25[" + _0x120b88 + "]: " + _0x215aee);
       }
     } catch (_0x45301a) {
       console.log(_0x45301a);
@@ -3330,13 +3333,13 @@ class _0x333e45 extends _0x24046c {
             num: _0x22c1df,
             title: _0x342214
           } = _0x2c1631.data;
-          this.log("完成任务[" + _0x342214 + "]成功: " + _0x22c1df + "次抽奖机会");
+          this.log("\u5B8C\u6210\u4EFB\u52A1[" + _0x342214 + "]\u6210\u529F: " + _0x22c1df + "\u6B21\u62BD\u5956\u673A\u4F1A");
         } else {
-          this.log("完成任务[" + _0x50635b + "]失败没有获得抽奖机会");
+          this.log("\u5B8C\u6210\u4EFB\u52A1[" + _0x50635b + "]\u5931\u8D25\u6CA1\u6709\u83B7\u5F97\u62BD\u5956\u673A\u4F1A");
         }
       } else {
         let _0x140a16 = _0x2c1631?.["message"] || _0x2c1631?.["msg"] || "";
-        this.log("完成任务[" + _0x50635b + "]失败[" + _0x3c92b5 + "]: " + _0x140a16);
+        this.log("\u5B8C\u6210\u4EFB\u52A1[" + _0x50635b + "]\u5931\u8D25[" + _0x3c92b5 + "]: " + _0x140a16);
       }
     } catch (_0x316430) {
       console.log(_0x316430);
@@ -3378,7 +3381,7 @@ class _0x333e45 extends _0x24046c {
           _0x1c081d.result.resultMsg = _0x16bed8.resultMsg;
         }
       } catch (_0x33899f) {
-        this.log("解析联通祝福返回失败:");
+        this.log("\u89E3\u6790\u8054\u901A\u795D\u798F\u8FD4\u56DE\u5931\u8D25:");
         console.log(_0x33899f);
       }
     }
@@ -3413,12 +3416,12 @@ class _0x333e45 extends _0x24046c {
         if (_0x4a51b5?.["location"]) {
           let _0x32c3c4 = new URL(_0x4a51b5.location),
             _0x4aa2d9 = _0x32c3c4.searchParams.get("sid");
-          _0x4aa2d9 ? (this.wocare_sid = _0x4aa2d9, _0xe03d23 = await this.wocare_loginmbh()) : this.log("联通祝福没有获取到sid");
+          _0x4aa2d9 ? (this.wocare_sid = _0x4aa2d9, _0xe03d23 = await this.wocare_loginmbh()) : this.log("\u8054\u901A\u795D\u798F\u6CA1\u6709\u83B7\u53D6\u5230sid");
         } else {
-          this.log("联通祝福没有获取到location");
+          this.log("\u8054\u901A\u795D\u798F\u6CA1\u6709\u83B7\u53D6\u5230location");
         }
       } else {
-        this.log("联通祝福获取sid失败[" + _0x571bc4 + "]");
+        this.log("\u8054\u901A\u795D\u798F\u83B7\u53D6sid\u5931\u8D25[" + _0x571bc4 + "]");
       }
     } catch (_0x4a16ba) {
       console.log(_0x4a16ba);
@@ -3448,7 +3451,7 @@ class _0x333e45 extends _0x24046c {
         this.wocare_token = _0x56ac18;
       } else {
         let _0xffa41d = _0xca14a?.["resultMsg"] || _0xca14a?.["resultDesc"] || "";
-        this.log("联通祝福登录失败[" + _0x43410e + "]: " + _0xffa41d);
+        this.log("\u8054\u901A\u795D\u798F\u767B\u5F55\u5931\u8D25[" + _0x43410e + "]: " + _0xffa41d);
       }
     } catch (_0x1eb84b) {
       console.log(_0x1eb84b);
@@ -3476,7 +3479,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0x5452d4 = _0x2a4fc0?.["resultMsg"] || _0x2a4fc0?.["resultDesc"] || "";
-        this.log("联通祝福进入活动失败[" + _0x2c004b + "]: " + _0x5452d4);
+        this.log("\u8054\u901A\u795D\u798F\u8FDB\u5165\u6D3B\u52A8\u5931\u8D25[" + _0x2c004b + "]: " + _0x5452d4);
       }
     } catch (_0x597b13) {
       console.log(_0x597b13);
@@ -3524,7 +3527,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0x10d6ec = _0x32f59b?.["resultMsg"] || _0x32f59b?.["resultDesc"] || "";
-        this.log("联通祝福[" + _0xa9b8ad.name + "]查询活动失败[" + _0x5b2835 + "]: " + _0x10d6ec);
+        this.log("\u8054\u901A\u795D\u798F[" + _0xa9b8ad.name + "]\u67E5\u8BE2\u6D3B\u52A8\u5931\u8D25[" + _0x5b2835 + "]: " + _0x10d6ec);
       }
     } catch (_0x52030a) {
       console.log(_0x52030a);
@@ -3551,7 +3554,7 @@ class _0x333e45 extends _0x24046c {
         }
       } else {
         let _0x355044 = _0x38de2a?.["resultMsg"] || _0x38de2a?.["resultDesc"] || "";
-        this.log("联通祝福[" + _0x1fef95.name + "]查询任务失败[" + _0x425051 + "]: " + _0x355044);
+        this.log("\u8054\u901A\u795D\u798F[" + _0x1fef95.name + "]\u67E5\u8BE2\u4EFB\u52A1\u5931\u8D25[" + _0x425051 + "]: " + _0x355044);
       }
     } catch (_0x14c042) {
       console.log(_0x14c042);
@@ -3560,7 +3563,7 @@ class _0x333e45 extends _0x24046c {
   async wocare_completeTask(_0x3f5d92, _0x50e428, _0x360522 = "1", _0x2c48eb = {}) {
     try {
       let _0x50f9e4 = _0x50e428.title,
-        _0x4facfd = _0x360522 == "1" ? "领取任务" : "完成任务",
+        _0x4facfd = _0x360522 == "1" ? "\u9886\u53D6\u4EFB\u52A1" : "\u5B8C\u6210\u4EFB\u52A1",
         _0x377c39 = "completeTask";
       const _0x303bcd = {
         token: this.wocare_token,
@@ -3576,11 +3579,11 @@ class _0x333e45 extends _0x24046c {
         } = await this.wocare_api(_0x377c39, _0x303bcd),
         _0xa787a0 = _0x4c672b.get(_0x2cc63e, "resultCode", _0x184c09);
       if (_0xa787a0 == "0000") {
-        this.log(_0x4facfd + "[" + _0x50f9e4 + "]成功");
+        this.log(_0x4facfd + "[" + _0x50f9e4 + "]\u6210\u529F");
         _0x360522 == "1" && (await this.wocare_completeTask(_0x3f5d92, _0x50e428, "4"));
       } else {
         let _0x2e4c1b = _0x2cc63e?.["resultMsg"] || _0x2cc63e?.["resultDesc"] || "";
-        this.log("联通祝福[" + _0x3f5d92.name + "]" + _0x4facfd + "[" + _0x50f9e4 + "]失败[" + _0xa787a0 + "]: " + _0x2e4c1b);
+        this.log("\u8054\u901A\u795D\u798F[" + _0x3f5d92.name + "]" + _0x4facfd + "[" + _0x50f9e4 + "]\u5931\u8D25[" + _0xa787a0 + "]: " + _0x2e4c1b);
       }
     } catch (_0x29872e) {
       console.log(_0x29872e);
@@ -3608,14 +3611,14 @@ class _0x333e45 extends _0x24046c {
             prizeName: _0x50e0e5,
             prizeDesc: _0x4e8140
           } = _0x427eea?.["data"]?.["data"]?.["prize"];
-          this.log("联通祝福[" + _0x103614.name + "]抽奖: " + _0x50e0e5 + "[" + _0x4e8140 + "]");
+          this.log("\u8054\u901A\u795D\u798F[" + _0x103614.name + "]\u62BD\u5956: " + _0x50e0e5 + "[" + _0x4e8140 + "]");
         } else {
           let _0x2529ec = _0x427eea?.["resultMsg"] || _0x427eea?.["resultDesc"] || "";
-          this.log("联通祝福[" + _0x103614.name + "]抽奖失败[" + _0x1a2341 + "]: " + _0x2529ec);
+          this.log("\u8054\u901A\u795D\u798F[" + _0x103614.name + "]\u62BD\u5956\u5931\u8D25[" + _0x1a2341 + "]: " + _0x2529ec);
         }
       } else {
         let _0x575c51 = _0x427eea?.["resultMsg"] || _0x427eea?.["resultDesc"] || "";
-        this.log("联通祝福[" + _0x103614.name + "]抽奖错误[" + _0x1d084a + "]: " + _0x575c51);
+        this.log("\u8054\u901A\u795D\u798F[" + _0x103614.name + "]\u62BD\u5956\u9519\u8BEF[" + _0x1d084a + "]: " + _0x575c51);
       }
     } catch (_0x43e414) {
       console.log(_0x43e414);
@@ -3655,7 +3658,7 @@ class _0x333e45 extends _0x24046c {
           await this.card_618_login(_0x5345ac);
         } else {
           let _0x3f8426 = _0x3f5ce1?.["msgInside"] || _0x3f5ce1?.["msg"] || "";
-          this.log("618集卡获取tokenId失败[" + _0x52a304 + "]: " + _0x3f8426);
+          this.log("618\u96C6\u5361\u83B7\u53D6tokenId\u5931\u8D25[" + _0x52a304 + "]: " + _0x3f8426);
         }
       }
     } catch (_0x120bbb) {
@@ -3689,9 +3692,9 @@ class _0x333e45 extends _0x24046c {
       if (_0x3466a2?.["location"]) {
         let _0x13496c = new URL(_0x3466a2.location);
         this.rptId = _0x13496c.searchParams.get("rptid");
-        this.rptId ? await this.card_618_authCheck() : this.log("618集卡获取rptid失败");
+        this.rptId ? await this.card_618_authCheck() : this.log("618\u96C6\u5361\u83B7\u53D6rptid\u5931\u8D25");
       } else {
-        this.log("618集卡获取rptid失败[" + _0xb0793d + "]");
+        this.log("618\u96C6\u5361\u83B7\u53D6rptid\u5931\u8D25[" + _0xb0793d + "]");
       }
     } catch (_0x624f72) {
       console.log(_0x624f72);
@@ -3722,15 +3725,15 @@ class _0x333e45 extends _0x24046c {
           isFirst = true
         } = _0x358e5a?.["data"];
         if (isFirst) {
-          await this.card_618_unifyDraw("首次进入");
+          await this.card_618_unifyDraw("\u9996\u6B21\u8FDB\u5165");
         }
-        this.log("618集卡可以抽奖" + userRemain + "次");
+        this.log("618\u96C6\u5361\u53EF\u4EE5\u62BD\u5956" + userRemain + "\u6B21");
         while (userRemain-- > 0) {
-          await this.card_618_unifyDraw("抽奖");
+          await this.card_618_unifyDraw("\u62BD\u5956");
         }
       } else {
         let _0x4ff8ee = _0x358e5a?.["message"] || _0x358e5a?.["msg"] || "";
-        this.log("618集卡进入主页失败[" + _0x4802a6 + "]: " + _0x4ff8ee);
+        this.log("618\u96C6\u5361\u8FDB\u5165\u4E3B\u9875\u5931\u8D25[" + _0x4802a6 + "]: " + _0x4ff8ee);
       }
     } catch (_0x6371bb) {
       console.log(_0x6371bb);
@@ -3757,15 +3760,15 @@ class _0x333e45 extends _0x24046c {
         } = await this.request(_0x630a5d),
         _0x2f8420 = _0x4c672b.get(_0xbbc5a6, "code", -1);
       if (_0x2f8420 == "0000" && _0xbbc5a6?.["data"]?.["returnCode"] == 0) {
-        let _0x46e05e = _0xbbc5a6?.["data"]?.["prizeId"] || "空气",
+        let _0x46e05e = _0xbbc5a6?.["data"]?.["prizeId"] || "\u7A7A\u6C14",
           _0x583237 = _0x1c214d[_0x46e05e] || _0x46e05e;
         const _0x22f8e4 = {
           notify: true
         };
-        this.log("618集卡[" + _0x431f14 + "]: " + _0x583237, _0x22f8e4);
+        this.log("618\u96C6\u5361[" + _0x431f14 + "]: " + _0x583237, _0x22f8e4);
       } else {
         let _0xda184 = _0xbbc5a6?.["data"]?.["returnMsg"] || _0xbbc5a6?.["msg"] || "";
-        this.log("618集卡[" + _0x431f14 + "]失败[" + (_0xbbc5a6?.["data"]?.["returnCode"] || _0x2f8420) + "]: " + _0xda184);
+        this.log("618\u96C6\u5361[" + _0x431f14 + "]\u5931\u8D25[" + (_0xbbc5a6?.["data"]?.["returnCode"] || _0x2f8420) + "]: " + _0xda184);
       }
     } catch (_0x59f330) {
       console.log(_0x59f330);
@@ -3905,7 +3908,7 @@ class _0x333e45 extends _0x24046c {
       }
       let _0x24da6c = Date.now(),
         _0x5d5d61 = 125000 + _0x4cf515 - _0x24da6c;
-      (this.need_read_rabbit || _0x32573f) && _0x5d5d61 > 0 && (this.log("等待2分钟..."), await _0x4c672b.wait(_0x5d5d61));
+      (this.need_read_rabbit || _0x32573f) && _0x5d5d61 > 0 && (this.log("\u7B49\u5F852\u5206\u949F..."), await _0x4c672b.wait(_0x5d5d61));
     }
     this.switch_woread_token(this.woread_accesstoken);
   }
@@ -3932,7 +3935,7 @@ class _0x333e45 extends _0x24046c {
     await this.moonbox_queryCurTaskStatus();
   }
   async userTask() {
-    _0x4c672b.log("\n------------------ 账号[" + this.index + "] ------------------");
+    _0x4c672b.log("\n------------------ \u8D26\u53F7[" + this.index + "] ------------------");
     if (!_0x159493) {
       await this.sign_task();
     }
@@ -3948,7 +3951,7 @@ class _0x333e45 extends _0x24046c {
     await this.woread_task();
   }
   async userTestTask() {
-    _0x4c672b.log("\n------------------ 账号[" + this.index + "] ------------------");
+    _0x4c672b.log("\n------------------ \u8D26\u53F7[" + this.index + "] ------------------");
     await this.ltyp_task();
   }
 }
@@ -3959,8 +3962,8 @@ class _0x333e45 extends _0x24046c {
   await _0xdfa6ec();
   _0x4c672b.read_env(_0x333e45);
   _0x4c672b.log("\n------------------------------------");
-  _0x4c672b.log("首页签到设置为: " + (_0x159493 ? "不" : "") + "运行");
-  _0x4c672b.log("联通祝福设置为: " + (_0xedc529 ? "不" : "") + "运行");
+  _0x4c672b.log("\u9996\u9875\u7B7E\u5230\u8BBE\u7F6E\u4E3A: " + (_0x159493 ? "\u4E0D" : "") + "\u8FD0\u884C");
+  _0x4c672b.log("\u8054\u901A\u795D\u798F\u8BBE\u7F6E\u4E3A: " + (_0xedc529 ? "\u4E0D" : "") + "\u8FD0\u884C");
   _0x4c672b.log("------------------------------------\n");
   for (let _0x3a7d7a of _0x4c672b.userList) {
     await _0x3a7d7a.userLoginTask();
@@ -3971,7 +3974,7 @@ class _0x333e45 extends _0x24046c {
   let _0x1b59a7 = _0x4c672b.userList.filter(_0x3fbb9d => _0x3fbb9d.valid && _0x3fbb9d.woread_verifycode && (_0x3fbb9d.need_read_rabbit || Object.values(_0x3fbb9d.moonbox_task_record).filter(_0x5c7f98 => _0x5c7f98 === true).length));
   if (_0x1b59a7.length) {
     let _0x46ed2b = [];
-    _0x4c672b.log("\n============ 开始刷阅读时长 ============");
+    _0x4c672b.log("\n============ \u5F00\u59CB\u5237\u9605\u8BFB\u65F6\u957F ============");
     for (let _0x5ef13c of _0x1b59a7) {
       _0x46ed2b.push(_0x5ef13c.woread_reading_task());
     }
@@ -4006,7 +4009,7 @@ async function _0x342cb7(_0x1f9ad3 = 0) {
       _0x3b4e95?.["commonMsg"] && _0x3b4e95.commonMsg.length > 0 && _0x4c672b.log(_0x3b4e95.commonMsg.join("\n") + "\n");
       if (_0x3b4e95[_0x4a2c68]) {
         let _0x589da0 = _0x3b4e95[_0x4a2c68];
-        _0x589da0.status == 0 ? _0x2bad9c >= _0x589da0.version ? (_0x3e3c00 = true, _0x4c672b.log(_0x589da0.msg[_0x589da0.status]), _0x4c672b.log(_0x589da0.updateMsg), _0x4c672b.log("现在运行的脚本版本是：" + _0x2bad9c + "，最新脚本版本：" + _0x589da0.latestVersion)) : _0x4c672b.log(_0x589da0.versionMsg) : _0x4c672b.log(_0x589da0.msg[_0x589da0.status]);
+        _0x589da0.status == 0 ? _0x2bad9c >= _0x589da0.version ? (_0x3e3c00 = true, _0x4c672b.log(_0x589da0.msg[_0x589da0.status]), _0x4c672b.log(_0x589da0.updateMsg), _0x4c672b.log("\u73B0\u5728\u8FD0\u884C\u7684\u811A\u672C\u7248\u672C\u662F\uFF1A" + _0x2bad9c + "\uFF0C\u6700\u65B0\u811A\u672C\u7248\u672C\uFF1A" + _0x589da0.latestVersion)) : _0x4c672b.log(_0x589da0.versionMsg) : _0x4c672b.log(_0x589da0.msg[_0x589da0.status]);
       } else {
         _0x4c672b.log(_0x3b4e95.errorMsg);
       }
@@ -4055,7 +4058,7 @@ function _0x4a9430(_0x3dc8ae) {
       const _0x39680c = {
         time: true
       };
-      this.log("[" + this.name + "]开始运行\n", _0x39680c);
+      this.log("[" + this.name + "]\u5F00\u59CB\u8FD0\u884C\n", _0x39680c);
       this.notifyStr = [];
       this.notifyFlag = true;
       this.userIdx = 0;
@@ -4109,10 +4112,10 @@ function _0x4a9430(_0x3dc8ae) {
         const _0x5d04ec = {
           notify: true
         };
-        this.log("未找到变量，请检查变量" + _0x52f10b.map(_0x46a071 => "[" + _0x46a071 + "]").join("或"), _0x5d04ec);
+        this.log("\u672A\u627E\u5230\u53D8\u91CF\uFF0C\u8BF7\u68C0\u67E5\u53D8\u91CF" + _0x52f10b.map(_0x46a071 => "[" + _0x46a071 + "]").join("\u6216"), _0x5d04ec);
         return false;
       }
-      this.log("共找到" + this.userCount + "个账号");
+      this.log("\u5171\u627E\u5230" + this.userCount + "\u4E2A\u8D26\u53F7");
       return true;
     }
     async threads(_0x5db126, _0x57b22b, _0x392357 = {}) {
@@ -4157,7 +4160,7 @@ function _0x4a9430(_0x3dc8ae) {
         return;
       }
       var _0x19b840 = require("./sendNotify");
-      this.log("\n============== 推送 ==============");
+      this.log("\n============== \u63A8\u9001 ==============");
       await _0x19b840.sendNotify(this.name, this.notifyStr.join("\n"));
     }
     padStr(_0x246b7e, _0x485edb, _0x56d4e8 = {}) {
@@ -4238,7 +4241,7 @@ function _0x4a9430(_0x3dc8ae) {
       const _0x265b3c = {
         time: true
       };
-      this.log("[" + this.name + "]运行结束，共运行了" + _0x4e1727 + "秒", _0x265b3c);
+      this.log("[" + this.name + "]\u8FD0\u884C\u7ED3\u675F\uFF0C\u5171\u8FD0\u884C\u4E86" + _0x4e1727 + "\u79D2", _0x265b3c);
       process.exit(0);
     }
     normalize_time(_0x138270, _0x5b6289 = {}) {
@@ -4273,12 +4276,12 @@ function _0x4a9430(_0x3dc8ae) {
         const _0x1b182a = {
           time: true
         };
-        _0x219c45.log("离目标时间[" + _0x5e4710 + "]大于" + _0x51a46f / 1000 + "秒,不等待", _0x1b182a);
+        _0x219c45.log("\u79BB\u76EE\u6807\u65F6\u95F4[" + _0x5e4710 + "]\u5927\u4E8E" + _0x51a46f / 1000 + "\u79D2,\u4E0D\u7B49\u5F85", _0x1b182a);
       } else {
         const _0x2644ea = {
           time: true
         };
-        _0x219c45.log("离目标时间[" + _0x5e4710 + "]还有" + _0x10797a / 1000 + "秒,开始等待", _0x2644ea);
+        _0x219c45.log("\u79BB\u76EE\u6807\u65F6\u95F4[" + _0x5e4710 + "]\u8FD8\u6709" + _0x10797a / 1000 + "\u79D2,\u5F00\u59CB\u7B49\u5F85", _0x2644ea);
         while (_0x10797a > 0) {
           let _0x59135c = Math.min(_0x10797a, _0x501f43);
           await this.wait(_0x59135c);
@@ -4288,7 +4291,7 @@ function _0x4a9430(_0x3dc8ae) {
         const _0x246dd7 = {
           time: true
         };
-        _0x219c45.log("已完成等待", _0x246dd7);
+        _0x219c45.log("\u5DF2\u5B8C\u6210\u7B49\u5F85", _0x246dd7);
       }
     }
     async wait_gap_interval(_0x380985, _0x47b42d) {
